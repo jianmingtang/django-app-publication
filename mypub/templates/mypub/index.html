@@ -1,0 +1,11 @@
+<html>
+{% if all_list %}
+    <ul>
+    {% for paper in all_list %}
+        <li><a href="/publication/{{ paper.id }}/">{{ paper.Title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No papers are available.</p>
+{% endif %}
+</html>
