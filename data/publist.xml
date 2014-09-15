@@ -2,872 +2,1125 @@
 
 <publist>
 
-
 <article>
-  <author>M. Bozkurt, M. R. Mahani, P. Studer, J.-M. Tang, S. R. Schofield, N. J. Curson, M. E. Flatté, A. Yu. Silov, C. F. Hirjibehedin, C. M. Canali, and P. M. Koenraad</author>
-
-  <title>Magnetic anisotropy of single Mn acceptors in GaAs in an external magnetic field</title>
-
+  <title>
+    Magnetic anisotropy of single Mn acceptors in GaAs in an external
+    magnetic field
+  </title>
+  <author>
+    M. Bozkurt, M. R. Mahani, P. Studer, J.-M. Tang, S. R. Schofield, N. J.
+    Curson, M. E. Flatté, A. Yu. Silov, C. F. Hirjibehedin, C. M. Canali,
+    and P. M. Koenraad
+  </author>
   <journal>
+    <name>\prb</name><volume>88</volume>
+    <page>205203</page><year>2013</year>
     <link>http://link.aps.org/doi/10.1103/PhysRevB.88.205203</link>
-    <name>\prb</name> <volume>88</volume> <page>205203</page>
-    <year>2013</year> </journal>
-
-  <pdf>PhysRevB.88.205203.pdf</pdf>
-
-  <abstract>We investigate the effect of an external magnetic field on the physical properties of the acceptor hole states associated with single Mn acceptors placed near the (110) surface of GaAs. Cross-sectional scanning tunneling microscopy images of the acceptor local density of states (LDOS) show that the strongly anisotropic hole wave function is not significantly affected by a magnetic field up to 6 T. These experimental results are supported by theoretical calculations based on a tight-binding model of Mn acceptors in GaAs. For Mn acceptors on the (110) surface and the subsurfaces immediately underneath, we find that an applied magnetic field modifies significantly the magnetic anisotropy landscape. However, the acceptor hole wave function is strongly localized around the Mn and the LDOS is quite independent of the direction of the Mn magnetic moment. On the other hand, for Mn acceptors placed on deeper layers below the surface, the acceptor hole wave function is more delocalized and the corresponding LDOS is much more sensitive on the direction of the Mn magnetic moment. However, the magnetic anisotropy energy for these magnetic impurities is large (up to 15 meV), and a magnetic field of 10 T can hardly change the landscape and rotate the direction of the Mn magnetic moment away from its easy axis. We predict that substantially larger magnetic fields are required to observe a significant field dependence of the tunneling current for impurities located several layers below the GaAs surface.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>PhysRevB.88.205203.pdf</link>
+  </url>
+  <abstract>
+    We investigate the effect of an external magnetic field on the physical
+    properties of the acceptor hole states associated with single Mn
+    acceptors placed near the (110) surface of GaAs. Cross-sectional
+    scanning tunneling microscopy images of the acceptor local density of
+    states (LDOS) show that the strongly anisotropic hole wave function is
+    not significantly affected by a magnetic field up to 6 T. These
+    experimental results are supported by theoretical calculations based on
+    a tight-binding model of Mn acceptors in GaAs. For Mn acceptors on the
+    (110) surface and the subsurfaces immediately underneath, we find that
+    an applied magnetic field modifies significantly the magnetic anisotropy
+    landscape. However, the acceptor hole wave function is strongly
+    localized around the Mn and the LDOS is quite independent of the
+    direction of the Mn magnetic moment. On the other hand, for Mn acceptors
+    placed on deeper layers below the surface, the acceptor hole wave
+    function is more delocalized and the corresponding LDOS is much more
+    sensitive on the direction of the Mn magnetic moment. However, the
+    magnetic anisotropy energy for these magnetic impurities is large (up to
+    15 meV), and a magnetic field of 10 T can hardly change the landscape
+    and rotate the direction of the Mn magnetic moment away from its easy
+    axis. We predict that substantially larger magnetic fields are required
+    to observe a significant field dependence of the tunneling current for
+    impurities located several layers below the GaAs surface.
+  </abstract>
+</article>
 
 <article>
-  <author>J. Wang, J.-M. Tang, A. Larson, G. P. Miller, and K. Pohl</author>
-
-  <title>Sharp organic interface of molecular C$_{60}$ chains and a pentacene derivative SAM on Au(788): A combined STM and DFT study</title>
-
+  <title>
+    Sharp organic interface of molecular C$_{60}$ chains and a pentacene
+    derivative SAM on Au(788): A combined STM and DFT study
+  </title>
+  <author>
+    J. Wang, J.-M. Tang, A. Larson, G. P. Miller, and K. Pohl
+  </author>
   <journal>
+    <name>\ss</name><volume>618</volume>
+    <page>78</page><year>2013</year>
     <link>http://dx.doi.org/10.1016/j.susc.2013.08.015</link>
-    <name>\ss</name> <volume>618</volume> <page>78</page>
-    <year>2013</year> </journal>
-
-  <pdf>ss618_78_2013.pdf</pdf>
-
-  <abstract>Controlling the molecular structure of the donor-acceptor interface is essential to overcoming the efficiency bottleneck in organic photovoltaics. We present a study of self-assembled fullerene (C60) molecular chains on perfectly ordered 6,13-dichloropentacene (DCP) monolayers forming on a vicinal Au(788) surface using scanning tunneling microscopy in conjunction with density functional theory calculations. DCP is a novel pentacene derivative optimized for photovoltaic applications. The molecules form a brick-wall patterned centered rectangular lattice with the long axis parallel to the monatomic steps that separate the 3.9 nm wide Au(111) terraces. The strong interaction between the C60 molecules and the gold substrate is well screened by the DCP monolayer. At submonolayer C60 coverage, the fullerene molecules form long parallel chains, 1.1 nm apart, with a rectangular arrangement instead of the expected close-packed configuration along the upper step edges. The perfectly ordered DCP structure is unaffected by the C60 chain formation. The controlled sharp highly-ordered organic interface has the potential to improve the conversion efficiency in organic photovoltaics.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>ss618_78_2013.pdf</link>
+  </url>
+  <abstract>
+    Controlling the molecular structure of the donor-acceptor interface is
+    essential to overcoming the efficiency bottleneck in organic
+    photovoltaics. We present a study of self-assembled fullerene (C60)
+    molecular chains on perfectly ordered 6,13-dichloropentacene (DCP)
+    monolayers forming on a vicinal Au(788) surface using scanning tunneling
+    microscopy in conjunction with density functional theory calculations.
+    DCP is a novel pentacene derivative optimized for photovoltaic
+    applications. The molecules form a brick-wall patterned centered
+    rectangular lattice with the long axis parallel to the monatomic steps
+    that separate the 3.9 nm wide Au(111) terraces. The strong interaction
+    between the C60 molecules and the gold substrate is well screened by the
+    DCP monolayer. At submonolayer C60 coverage, the fullerene molecules
+    form long parallel chains, 1.1 nm apart, with a rectangular arrangement
+    instead of the expected close-packed configuration along the upper step
+    edges. The perfectly ordered DCP structure is unaffected by the C60
+    chain formation. The controlled sharp highly-ordered organic interface
+    has the potential to improve the conversion efficiency in organic
+    photovoltaics.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang, B. T. Collins, and M. E. Flatté</author>
-
-  <title>Electron spin-phonon interaction symmetries and tunable spin relaxation in silicon and germanium</title>
-
+  <title>
+    Electron spin-phonon interaction symmetries and tunable spin relaxation
+    in silicon and germanium
+  </title>
+  <author>
+    J.-M. Tang, B. T. Collins, and M. E. Flatté
+  </author>
   <journal>
+    <name>\prb</name><volume>85</volume>
+    <page>045202</page><year>2012</year>
     <link>http://link.aps.org/doi/10.1103/PhysRevB.85.045202</link>
-    <name>\prb</name> <volume>85</volume> <page>045202</page>
-    <year>2012</year> </journal>
-
-  <pdf>PhysRevB.85.045202.pdf</pdf>
-
-  <vjournal> <name>\VJNST</name> <volume>25</volume> <issue>4</issue>
-    <year>2012</year> </vjournal>
-
-  <abstract>Compared with direct-gap semiconductors, the valley degeneracy of silicon and germanium opens up new channels for spin relaxation that counteract the spin degeneracy of the inversion-symmetric system. Here the symmetries of the electron-phonon interaction for silicon and germanium are identified and the resulting spin lifetimes are calculated. Room-temperature spin lifetimes of electrons in silicon are found to be comparable to those in gallium arsenide, however, the spin lifetimes in silicon or germanium can be tuned by reducing the valley degeneracy through strain or quantum confinement. The tunable range is limited to slightly over an order of magnitude by intravalley processes.</abstract> </article>
-
+  </journal>
+  <vjournal>
+    <name>\VJNST</name><volume>25</volume>
+    <issue>4</issue><year>2012</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>PhysRevB.85.045202.pdf</link>
+  </url>
+  <abstract>
+    Compared with direct-gap semiconductors, the valley degeneracy of
+    silicon and germanium opens up new channels for spin relaxation that
+    counteract the spin degeneracy of the inversion-symmetric system. Here
+    the symmetries of the electron-phonon interaction for silicon and
+    germanium are identified and the resulting spin lifetimes are
+    calculated. Room-temperature spin lifetimes of electrons in silicon are
+    found to be comparable to those in gallium arsenide, however, the spin
+    lifetimes in silicon or germanium can be tuned by reducing the valley
+    degeneracy through strain or quantum confinement. The tunable range is
+    limited to slightly over an order of magnitude by intravalley processes.
+  </abstract>
+</article>
 
 <article>
-  <author>J. Wang, I. Kaur, B. Diaconescu, J.-M. Tang, G. P. Miller, and K. Pohl</author>
-
-  <title>Highly ordered assembly of single-domain dichloropentacene over large areas on vicinal gold surfaces</title>
-
+  <title>
+    Highly ordered assembly of single-domain dichloropentacene over large
+    areas on vicinal gold surfaces
+  </title>
+  <author>
+    J. Wang, I. Kaur, B. Diaconescu, J.-M. Tang, G. P. Miller, and K. Pohl
+  </author>
   <journal>
+    <name>ACS Nano</name><volume>5</volume>
+    <page>1792</page><year>2011</year>
     <link>http://pubs.acs.org/doi/abs/10.1021/nn102468p</link>
-    <name>ACS Nano</name> <volume>5</volume> <page>1792</page>
-    <year>2011</year> </journal>
-
-  <pdf>ACSNano.5.1792.pdf</pdf>
-
-  <abstract>Defining pathways to assemble long-range-ordered 2D nanostructures of specifically designed organic molecules is required in order to optimize the performance of organic thin-film electronic devices. We report on the rapid fabrication of a nearly perfect self-assembled monolayer (SAM) composed of a single-domain 6,13-dichloropentacene (DCP) brick-wall pattern on Au(788). Scanning tunneling microscopy (STM) results show the well-ordered DCP SAM extends over hundreds of nanometers. Combining STM results with insights from density functional theory, we propose that a combination of unique intermolecular and molecule-step interactions drives the DCP SAM formation.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>ACSNano.5.1792.pdf</link>
+  </url>
+  <abstract>
+    Defining pathways to assemble long-range-ordered 2D nanostructures of
+    specifically designed organic molecules is required in order to optimize
+    the performance of organic thin-film electronic devices. We report on
+    the rapid fabrication of a nearly perfect self-assembled monolayer (SAM)
+    composed of a single-domain 6,13-dichloropentacene (DCP) brick-wall
+    pattern on Au(788). Scanning tunneling microscopy (STM) results show the
+    well-ordered DCP SAM extends over hundreds of nanometers. Combining STM
+    results with insights from density functional theory, we propose that a
+    combination of unique intermolecular and molecule-step interactions
+    drives the DCP SAM formation.
+  </abstract>
+</article>
 
 <article>
-  <author>J. K. Garleff, A. P. Wijnheijmer, A. Yu. Silov, J. van Bree, W. Van Roy, J.-M. Tang, M. E. Flatté and P. M. Koenraad</author>
-
-  <title>Enhanced binding energy of manganese acceptors close to the GaAs(110) surface</title>
-
+  <title>
+    Enhanced binding energy of manganese acceptors close to the GaAs(110)
+    surface
+  </title>
+  <author>
+    J. K. Garleff, A. P. Wijnheijmer, A. Yu. Silov, J. van Bree, W. Van Roy,
+    J.-M. Tang, M. E. Flatté and P. M. Koenraad
+  </author>
   <journal>
+    <name>\prb</name><volume>82</volume>
+    <page>035303</page><year>2010</year>
     <link>http://link.aps.org/doi/10.1103/PhysRevB.82.035303</link>
-    <name>\prb</name> <volume>82</volume> <page>035303</page>
-    <year>2010</year> </journal>
-
-  <pdf>PhysRevB.82.035303.pdf</pdf>
-
-  <abstract>Scanning tunneling spectroscopy was performed at low temperature on buried manganese (Mn) acceptors below the (110) surface of gallium arsenide. The main Mn-induced features consisted of a number of dI/dV peaks in the band gap of the host material. The peaks in the band gap are followed by negative differential conductivity, which can be understood in terms of an energy-filter mechanism. The spectroscopic features detected on the Mn atoms clearly depend on the depth of the addressed acceptor below the surface. Combining the depth dependence of the positions of the Mn-induced peaks and using the energy-filter model to explain the negative resistance qualitatively proves that the binding energy of the hole bound to the Mn atom increases for Mn acceptors closer to the surface.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>PhysRevB.82.035303.pdf</link>
+  </url>
+  <abstract>
+    Scanning tunneling spectroscopy was performed at low temperature on
+    buried manganese (Mn) acceptors below the (110) surface of gallium
+    arsenide. The main Mn-induced features consisted of a number of dI/dV
+    peaks in the band gap of the host material. The peaks in the band gap
+    are followed by negative differential conductivity, which can be
+    understood in terms of an energy-filter mechanism. The spectroscopic
+    features detected on the Mn atoms clearly depend on the depth of the
+    addressed acceptor below the surface. Combining the depth dependence of
+    the positions of the Mn-induced peaks and using the energy-filter model
+    to explain the negative resistance qualitatively proves that the binding
+    energy of the hole bound to the Mn atom increases for Mn acceptors
+    closer to the surface.
+  </abstract>
+</article>
 
 <article>
-  <author>C. Çelebi, J. K. Garleff, A. Yu. Silov, A. M. Yakunin, P. M. Koenraad, W. Van Roy, J.-M. Tang and M. E. Flatté</author>
-
-  <title>Surface induced asymmetry of acceptor wave functions</title>
-
+  <title>
+    Surface induced asymmetry of acceptor wave functions
+  </title>
+  <author>
+    C. Çelebi, J. K. Garleff, A. Yu. Silov, A. M. Yakunin, P. M. Koenraad,
+    W. Van Roy, J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>104</volume>
+    <page>086404</page><year>2010</year>
     <link>http://link.aps.org/doi/10.1103/PhysRevLett.104.086404</link>
-    <name>\prl</name> <volume>104</volume> <page>086404</page>
-    <year>2010</year> </journal>
-
-  <pdf>PhysRevLett.104.086404.pdf</pdf>
-
+  </journal>
   <url>
-     <link>http://prl.aps.org/covers/104/8</link>
-     <name>[PRL cover image]</name> </url>
-
-  <abstract>Measurements of the local density of states of individual
-    acceptors in III-V semiconductors show that the symmetry of the
-    acceptor states strongly depends on the depth of the atom below a
-    (110) surface. Tight-binding calculations performed for a
-    uniformly strained bulk material demonstrate that strain induced
-    by the surface relaxation is responsible for the observed
-    depth-dependent symmetry breaking of acceptor wave functions. As
-    this effect is strongest for weakly bound acceptors, it explains
-    within a unified approach the commonly observed triangular shapes
-    of shallow acceptors and the crosslike shapes of deeply bound
-    acceptor states in III-V materials.</abstract> </article>
-
+    <name>[Full Text]</name>
+    <link>PhysRevLett.104.086404.pdf</link>
+  </url>
+  <url>
+    <name>[PRL Cover Image]</name>
+    <link>http://prl.aps.org/covers/104/8</link>
+  </url>
+  <abstract>
+    Measurements of the local density of states of individual acceptors in
+    III-V semiconductors show that the symmetry of the acceptor states
+    strongly depends on the depth of the atom below a (110) surface.
+    Tight-binding calculations performed for a uniformly strained bulk
+    material demonstrate that strain induced by the surface relaxation is
+    responsible for the observed depth-dependent symmetry breaking of
+    acceptor wave functions. As this effect is strongest for weakly bound
+    acceptors, it explains within a unified approach the commonly observed
+    triangular shapes of shallow acceptors and the crosslike shapes of
+    deeply bound acceptor states in III-V materials.
+  </abstract>
+</article>
 
 <article>
-  <author>W.-M. Huang, J.-M. Tang, and H.-H. Lin</author>
-
-  <title>Power-law singularity in the local density of states due to the point defect in graphene</title>
-
+  <title>
+    Power-law singularity in the local density of states due to the point
+    defect in graphene
+  </title>
+  <author>
+    W.-M. Huang, J.-M. Tang, and H.-H. Lin
+  </author>
   <journal>
+    <name>\prb</name><volume>80</volume>
+    <page>121404(R)</page><year>2009</year>
     <link>http://link.aps.org/doi/10.1103/PhysRevB.80.121404</link>
-    <name>\prb</name> <volume>80</volume> <page>121404(R)</page>
-    <year>2009</year> </journal>
-
-  <pdf>prb80_121404_2009.pdf</pdf>
-
-  <abstract>Defects in graphene give rise to zero modes that are often
-    related to the sharp peak in the local density of states near the
-    defect site. Here we solved all zero modes induced by a single
-    defect in the finite-size graphene and show that their
-    contributions to the local density of states vanish in the
-    thermodynamic limit. Instead, lots of resonant states emerge at
-    low energies and eventually lead to a power-law singularity in the
-    local density of states. Our findings show that the impurity
-    problem in graphene should be treated as a collective phenomenon
-    rather than a single impurity state.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb80_121404_2009.pdf</link>
+  </url>
+  <abstract>
+    Defects in graphene give rise to zero modes that are often related to
+    the sharp peak in the local density of states near the defect site. Here
+    we solved all zero modes induced by a single defect in the finite-size
+    graphene and show that their contributions to the local density of
+    states vanish in the thermodynamic limit. Instead, lots of resonant
+    states emerge at low energies and eventually lead to a power-law
+    singularity in the local density of states. Our findings show that the
+    impurity problem in graphene should be treated as a collective
+    phenomenon rather than a single impurity state.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Optical and electrical manipulation of single ion spins in semiconductors</title>
-
+  <title>
+    Optical and electrical manipulation of single ion spins in
+    semiconductors
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>Proc. SPIE</name><volume>7398</volume>
+    <page>73980K</page><year>2009</year>
     <link>http://dx.doi.org/10.1117/12.828944</link>
-    <name>Proc. SPIE</name> <volume>7398</volume> <page>73980K</page>
-    <year>2009</year> </journal>
-
-  <pdf>spie7398_73980K_2009.pdf</pdf>
-
-  <abstract>Single ion spins in semiconductors with sizable spin-orbit
-    interaction can be optically or electrically manipulated. The
-    highly extended anisotropic wave function of the hole bound to
-    each magnetic ion is susceptible to external non-magnetic control
-    fields. The spin-orbit coupling between the orbital and spin
-    character of the hole permits indirect manipulation and readout of
-    the ionic spin state. The spin-spin interaction between the
-    magnetic ions is electrically or structurally
-    controllable.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>spie7398_73980K_2009.pdf</link>
+  </url>
+  <abstract>
+    Single ion spins in semiconductors with sizable spin-orbit interaction
+    can be optically or electrically manipulated. The highly extended
+    anisotropic wave function of the hole bound to each magnetic ion is
+    susceptible to external non-magnetic control fields. The spin-orbit
+    coupling between the orbital and spin character of the hole permits
+    indirect manipulation and readout of the ionic spin state. The spin-spin
+    interaction between the magnetic ions is electrically or structurally
+    controllable.
+  </abstract>
+</article>
 
 <article>
-  <author>M. E. Flatté, A. De, J.-M. Tang, and C. E. Pryor</author>
-
-  <title>Optoelectronic manipulation of single spins in semiconductors</title>
-
+  <title>
+    Optoelectronic manipulation of single spins in semiconductors
+  </title>
+  <author>
+    M. E. Flatté, A. De, J.-M. Tang, and C. E. Pryor
+  </author>
   <journal>
+    <name>Proc. SPIE</name><volume>7225</volume>
+    <page>722504</page><year>2009</year>
     <link>http://dx.doi.org/10.1117/12.813807</link>
-    <name>Proc. SPIE</name> <volume>7225</volume> <page>722504</page>
-    <year>2009</year> </journal>
-
-  <pdf>spie7225_722504_2009.pdf</pdf>
-
-  <abstract>In systems with sizable spin-orbit interaction intense
-    optical illumination or an electric field can generate an
-    effective "pseudomagnetic field" which replaces a true applied
-    magnetic field for the efficient and rapid manipulation of
-    spins. The theoretical characteristics of optically-induced spin
-    precession in self-assembled quantum dots will be described, along
-    with the potential for manipulating spins bound to donors and
-    acceptors with electric fields.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>spie7225_722504_2009.pdf</link>
+  </url>
+  <abstract>
+    In systems with sizable spin-orbit interaction intense optical
+    illumination or an electric field can generate an effective
+    "pseudomagnetic field" which replaces a true applied magnetic field for
+    the efficient and rapid manipulation of spins. The theoretical
+    characteristics of optically-induced spin precession in self-assembled
+    quantum dots will be described, along with the potential for
+    manipulating spins bound to donors and acceptors with electric fields.
+  </abstract>
+</article>
 
 <article>
-  <author>D.-A. Luh, C.-M. Cheng, K.-D. Tsuei and J.-M. Tang</author>
-
-  <title>Atomic-layer-resolved bound states in quantum wells analyzed using a pseudopotential approach</title>
-
+  <title>
+    Atomic-layer-resolved bound states in quantum wells analyzed using a
+    pseudopotential approach
+  </title>
+  <author>
+    D.-A. Luh, C.-M. Cheng, K.-D. Tsuei and J.-M. Tang
+  </author>
   <journal>
+    <name>\prb</name><volume>78</volume>
+    <page>233406</page><year>2008</year>
     <link>http://link.aps.org/abstract/PRB/v78/e233406</link>
-    <name>\prb</name> <volume>78</volume> <page>233406</page>
-    <year>2008</year> </journal>
-
-  <pdf>prb78_233406_2008.pdf</pdf>
-
-  <vjournal> <name>\VJNST</name> <volume>18</volume> <issue>1</issue>
-    <year>2009</year> </vjournal>
-
-  <abstract>We observed atomic-layer-resolved surface states and
-    quantum-well states using angle-resolved photoelectron
-    spectroscopy on atomically flat Ag/Au(111) thin films grown with a
-    two-step method. The layer dependence of binding energies of the
-    bound states was determined unequivocally for a Ag coverage up to
-    17 monolayers. We analyzed both the surface states and the
-    quantum-well states using a one-dimensional pseudopotential
-    approach. Our results show a fruitful combination of growth
-    techniques and theoretical analysis for thin-film
-    systems.</abstract> </article>
-
+  </journal>
+  <vjournal>
+    <name>\VJNST</name><volume>18</volume>
+    <issue>1</issue><year>2009</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb78_233406_2008.pdf</link>
+  </url>
+  <abstract>
+    We observed atomic-layer-resolved surface states and quantum-well states
+    using angle-resolved photoelectron spectroscopy on atomically flat
+    Ag/Au(111) thin films grown with a two-step method. The layer dependence
+    of binding energies of the bound states was determined unequivocally for
+    a Ag coverage up to 17 monolayers. We analyzed both the surface states
+    and the quantum-well states using a one-dimensional pseudopotential
+    approach. Our results show a fruitful combination of growth techniques
+    and theoretical analysis for thin-film systems.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Magnetic Circular Dichroism from the Impurity Band in III-V Diluted Magnetic Semiconductors</title>
-
+  <title>
+    Magnetic Circular Dichroism from the Impurity Band in III-V Diluted
+    Magnetic Semiconductors
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>101</volume>
+    <page>157203</page><year>2008</year>
     <link>http://link.aps.org/abstract/PRL/v101/e157203</link>
-    <name>\prl</name> <volume>101</volume> <page>157203</page>
-    <year>2008</year> </journal>
-
-  <pdf>prl101_157203_2008.pdf</pdf>
-
-  <abstract>The magnetic circular dichroism of III-V diluted magnetic
-    semiconductors, calculated within a theoretical framework
-    suitable for highly disordered materials, is shown to be dominated
-    by optical transitions between the bulk bands and an impurity band
-    formed from magnetic dopant states. The real-space Green's
-    functions incorporate spatial correlations in the disordered
-    conduction band and valence-band electronic structure, and include
-    extended and localized states on an equal basis. Our findings
-    reconcile unusual trends in the experimental magnetic circular
-    dichroism in III-V diluted magnetic semiconductors with the
-    antiferromagnetic p-d exchange interaction between a magnetic
-    dopant spin and its host.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl101_157203_2008.pdf</link>
+  </url>
+  <abstract>
+    The magnetic circular dichroism of III-V diluted magnetic
+    semiconductors, calculated within a theoretical framework suitable for
+    highly disordered materials, is shown to be dominated by optical
+    transitions between the bulk bands and an impurity band formed from
+    magnetic dopant states. The real-space Green's functions incorporate
+    spatial correlations in the disordered conduction band and valence-band
+    electronic structure, and include extended and localized states on an
+    equal basis. Our findings reconcile unusual trends in the experimental
+    magnetic circular dichroism in III-V diluted magnetic semiconductors
+    with the antiferromagnetic p-d exchange interaction between a magnetic
+    dopant spin and its host.
+  </abstract>
+</article>
 
 <article>
-  <author>J. K. Garleff, C. Çelebi, W. Van Roy, J.-M. Tang and M. E. Flatté, P. M. Koenraad</author>
-
-  <title>Atomically precise impurity identification and modification on the manganese doped GaAs(110) surface with scanning tunneling microscopy</title>
-
+  <title>
+    Atomically precise impurity identification and modification on the
+    manganese doped GaAs(110) surface with scanning tunneling microscopy
+  </title>
+  <author>
+    J. K. Garleff, C. Çelebi, W. Van Roy, J.-M. Tang and M. E. Flatté, P. M.
+    Koenraad
+  </author>
   <journal>
+    <name>\prb</name><volume>78</volume>
+    <page>075313</page><year>2008</year>
     <link>http://link.aps.org/abstract/PRB/v78/e075313</link>
-    <name>\prb</name> <volume>78</volume> <page>075313</page>
-    <year>2008</year>
   </journal>
-
-  <pdf>prb78_075313_2008.pdf</pdf>
-
-  <abstract>Cross-sectional scanning tunneling microscopy (STM)
-    measurements on molecular beam epitaxy grown Mn doped GaAs(110) at
-    5 and 77 K are presented. The enhanced mechanical stability of the
-    STM at low temperature allows a detailed study of the electronic
-    contrast of Mn atoms in the GaAs(110) surface. According to
-    reproducible and distinguishable contrast patterns of single Mn
-    atoms, we present statistical evidence for a layer by layer
-    identification of Mn atoms embedded in the first few monatomic
-    layers of the crystal. A comparison with a bulklike theoretical
-    approach reveals a semiquantitative agreement with the
-    measurements. Remaining differences between theory and experiment
-    indicate the influence of the surface as an important factor to
-    understand the contrast of impurities close to the
-    surface. Furthermore, we report the injection of transition-metal
-    atoms into the surface. Finally, reproducible complexes consisting
-    of a surface Mn and an adsorbate atom are found and
-    manipulated.</abstract> </article>
-
+  <url>
+    <name>[Full Text]</name>
+    <link>prb78_075313_2008.pdf</link>
+  </url>
+  <abstract>
+    Cross-sectional scanning tunneling microscopy (STM) measurements on
+    molecular beam epitaxy grown Mn doped GaAs(110) at 5 and 77 K are
+    presented. The enhanced mechanical stability of the STM at low
+    temperature allows a detailed study of the electronic contrast of Mn
+    atoms in the GaAs(110) surface. According to reproducible and
+    distinguishable contrast patterns of single Mn atoms, we present
+    statistical evidence for a layer by layer identification of Mn atoms
+    embedded in the first few monatomic layers of the crystal. A comparison
+    with a bulklike theoretical approach reveals a semiquantitative
+    agreement with the measurements. Remaining differences between theory
+    and experiment indicate the influence of the surface as an important
+    factor to understand the contrast of impurities close to the surface.
+    Furthermore, we report the injection of transition-metal atoms into the
+    surface. Finally, reproducible complexes consisting of a surface Mn and
+    an adsorbate atom are found and manipulated.
+  </abstract>
+</article>
 
 <article>
-  <author>R. C. Myers, M. H. Mikkelsen, J.-M. Tang, A. C. Gossard, M. E. Flatté and D. D. Awschalom</author>
-
-  <title>Zero-field optical manipulation of magnetic ions in semiconductors</title>
-
+  <title>
+    Zero-field optical manipulation of magnetic ions in semiconductors
+  </title>
+  <author>
+    R. C. Myers, M. H. Mikkelsen, J.-M. Tang, A. C. Gossard, M. E. Flatté
+    and D. D. Awschalom
+  </author>
   <journal>
+    <name>Nature Materials</name><volume>7</volume>
+    <page>203</page><year>2008</year>
     <link>http://www.nature.com/nmat/journal/v7/n3/abs/nmat2123.html</link>
-    <name>Nature Materials</name> <volume>7</volume> <page>203</page>
-    <year>2008</year> </journal>
-
+  </journal>
+  <vjournal>
+    <name>\VJNST</name><volume>17</volume>
+    <issue>10</issue><year>2008</year>
+  </vjournal>
   <url>
-     <link>nmat7_203_2008-supp.pdf</link>
-     <name>[Supplementary Information]</name> </url>
-
-  <pdf>nmat7_203_2008.pdf</pdf>
-
-  <vjournal> <name>\VJNST</name> <volume>17</volume> <issue>10</issue>
-    <year>2008</year> </vjournal>
-
-  <abstract>Controlling and monitoring individual spins is desirable
-    for building spin-based devices, as well as implementing quantum
-    information processing schemes. As with trapped ions in cold
-    gases, magnetic ions trapped on a semiconductor lattice have
-    uniform properties and relatively long spin
-    lifetimes. Furthermore, diluted magnetic moments in semiconductors
-    can be strongly coupled to the surrounding host, permitting
-    optical or electrical spin manipulation. Here we describe the
-    zero-field optical manipulation of a few hundred manganese ions in
-    a single gallium arsenide quantum well. Optically created mobile
-    electron spins dynamically generate an energy splitting of the ion
-    spins and enable magnetic moment orientation solely by changing
-    either photon helicity or energy. These polarized manganese spins
-    precess in a transverse field, enabling measurements of the spin
-    lifetimes. As the magnetic ion concentration is reduced and the
-    manganese spin lifetime increases, coherent optical control and
-    readout of single manganese spins in gallium arsenide should be
-    possible.</abstract> </article>
-
+    <name>[Full Text]</name>
+    <link>nmat7_203_2008.pdf</link>
+  </url>
+  <url>
+    <name>[Supplementary Information]</name>
+    <link>nmat7_203_2008-supp.pdf</link>
+  </url>
+  <abstract>
+    Controlling and monitoring individual spins is desirable for building
+    spin-based devices, as well as implementing quantum information
+    processing schemes. As with trapped ions in cold gases, magnetic ions
+    trapped on a semiconductor lattice have uniform properties and
+    relatively long spin lifetimes. Furthermore, diluted magnetic moments in
+    semiconductors can be strongly coupled to the surrounding host,
+    permitting optical or electrical spin manipulation. Here we describe the
+    zero-field optical manipulation of a few hundred manganese ions in a
+    single gallium arsenide quantum well. Optically created mobile electron
+    spins dynamically generate an energy splitting of the ion spins and
+    enable magnetic moment orientation solely by changing either photon
+    helicity or energy. These polarized manganese spins precess in a
+    transverse field, enabling measurements of the spin lifetimes. As the
+    magnetic ion concentration is reduced and the manganese spin lifetime
+    increases, coherent optical control and readout of single manganese
+    spins in gallium arsenide should be possible.
+  </abstract>
+</article>
 
 <article>
-  <author>C. Çelebi, P. M. Koenraad, A. Yu. Silov, W. Van Roy, A. M. Monakhov, J.-M. Tang and M. E. Flatté</author>
-
-  <title>Anisotropic Spatial Structure of Deep Acceptor States in GaAs and GaP</title>
-
+  <title>
+    Anisotropic Spatial Structure of Deep Acceptor States in GaAs and GaP
+  </title>
+  <author>
+    C. Çelebi, P. M. Koenraad, A. Yu. Silov, W. Van Roy, A. M. Monakhov,
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prb</name><volume>77</volume>
+    <page>075328</page><year>2008</year>
     <link>http://link.aps.org/abstract/PRB/v77/e075328</link>
-    <name>\prb</name> <volume>77</volume> <page>075328</page>
-    <year>2008</year>
   </journal>
-
-  <pdf>prb77_075328_2008.pdf</pdf>
-
-  <abstract>Cross-sectional scanning tunneling microscopy is used to
-    identify the origin of the anisotropic electronic structure of
-    acceptor states in III-V semiconductors. The density of states
-    introduced by a hole bound to an individual Cd acceptor in GaP is
-    spatially mapped at room temperature. Similar to the Mn hole wave
-    function in GaAs, we found a highly anisotropic, crosslike shape
-    of the hole bound to Cd both at the GaP(110) and the
-    GaP(1\bar{1}0) orthogonal cleavage planes. The experimentally
-    observed similarity of the symmetry properties of Mn:GaAs to
-    Cd:GaP shows that the anisotropic structure of acceptor states in
-    zinc-blende III-V compounds is determined by the cubic symmetry of
-    the host crystal. Nevertheless, the weak spin-orbit interaction in
-    GaP leads to a slight modification of the Cd bound-hole wave
-    function relative to that of Mn in GaAs. In addition to the
-    anisotropic angular structure of the d-like spherical harmonic of
-    the wave function, which dominates the appearance of the hole
-    ground state far from the ionic core, the admixture of g-like and
-    higher order spherical harmonics is identified at the sides of the
-    Cd hole wave function. The experimentally obtained results agree
-    with both atomistic tight-binding and envelope-function
-    effective-mass theoretical models.</abstract> </article>
-
+  <url>
+    <name>[Full Text]</name>
+    <link>prb77_075328_2008.pdf</link>
+  </url>
+  <abstract>
+    Cross-sectional scanning tunneling microscopy is used to identify the
+    origin of the anisotropic electronic structure of acceptor states in
+    III-V semiconductors. The density of states introduced by a hole bound
+    to an individual Cd acceptor in GaP is spatially mapped at room
+    temperature. Similar to the Mn hole wave function in GaAs, we found a
+    highly anisotropic, crosslike shape of the hole bound to Cd both at the
+    GaP(110) and the GaP(1\bar{1}0) orthogonal cleavage planes. The
+    experimentally observed similarity of the symmetry properties of Mn:GaAs
+    to Cd:GaP shows that the anisotropic structure of acceptor states in
+    zinc-blende III-V compounds is determined by the cubic symmetry of the
+    host crystal. Nevertheless, the weak spin-orbit interaction in GaP leads
+    to a slight modification of the Cd bound-hole wave function relative to
+    that of Mn in GaAs. In addition to the anisotropic angular structure of
+    the d-like spherical harmonic of the wave function, which dominates the
+    appearance of the hole ground state far from the ionic core, the
+    admixture of g-like and higher order spherical harmonics is identified
+    at the sides of the Cd hole wave function. The experimentally obtained
+    results agree with both atomistic tight-binding and envelope-function
+    effective-mass theoretical models.
+  </abstract>
+</article>
 
 <article>
-  <author>D.-A. Luh, C.-M. Cheng, C.-T. Tsai, K.-D. Tsuei, and J.-M. Tang</author>
-
-  <title>Transition from disorder to order in thin metallic films studied with angle-resolved photoelectron spectroscopy</title>
-
+  <title>
+    Transition from disorder to order in thin metallic films studied with
+    angle-resolved photoelectron spectroscopy
+  </title>
+  <author>
+    D.-A. Luh, C.-M. Cheng, C.-T. Tsai, K.-D. Tsuei, and J.-M. Tang
+  </author>
   <journal>
+    <name>\prl</name><volume>100</volume>
+    <page>027603</page><year>2008</year>
     <link>http://link.aps.org/abstract/PRL/v100/e027603</link>
-    <name>\prl</name> <volume>100</volume> <page>027603</page>
-    <year>2008</year>
   </journal>
-
-  <pdf>prl100_027603_2008.pdf</pdf>
-
+  <vjournal>
+    <name>\VJNST</name><volume>17</volume>
+    <issue>4</issue><year>2008</year>
+  </vjournal>
   <url>
-    <old>http://www.natureasia.com/asia-materials/highlight.php?id=79</old>
+    <name>[Full Text]</name>
+    <link>prl100_027603_2008.pdf</link>
+  </url>
+  <url>
+    <name>[Nature Asia Materials Highlight]</name>
     <link>http://dx.doi.org/10.1038/asiamat.2008.23</link>
-    <name>[Nature Asia Materials Highlight]</name> </url>
-  
-  <vjournal> <name>\VJNST</name> <volume>17</volume> <issue>4</issue>
-    <year>2008</year> </vjournal>
-
-  <abstract>The transition from disorder to order in Ag film grown on
-    Au(111) was investigated by monitoring the quantum well states
-    using angle-resolved photoelectron spectroscopy. Our results show
-    that the binding energies do not alter, but the in-plane
-    dispersion alters from flat to parabolic when the film is
-    annealed. We suggest that there are isolated and ordered patches
-    scattered across the film at an early stage of the transition and
-    that atoms inside the patches are fully ordered along the surface
-    normal. These ordered patches grow and merge together as the
-    annealing temperature increases.</abstract> </article>
-
+  </url>
+  <abstract>
+    The transition from disorder to order in Ag film grown on Au(111) was
+    investigated by monitoring the quantum well states using angle-resolved
+    photoelectron spectroscopy. Our results show that the binding energies
+    do not alter, but the in-plane dispersion alters from flat to parabolic
+    when the film is annealed. We suggest that there are isolated and
+    ordered patches scattered across the film at an early stage of the
+    transition and that atoms inside the patches are fully ordered along the
+    surface normal. These ordered patches grow and merge together as the
+    annealing temperature increases.
+  </abstract>
+</article>
 
 <article>
-  <author>B. L. Sheu, R. C. Myers, J.-M. Tang, N. Samarth, D. D. Awschalom, P. Schiffer, and M. E. Flatté</author>
-
-  <title>Onset of ferromagnetism in low-doped Ga$_{1-x}$Mn$_{x}$As</title>
-
+  <title>
+    Onset of ferromagnetism in low-doped Ga$_{1-x}$Mn$_{x}$As
+  </title>
+  <author>
+    B. L. Sheu, R. C. Myers, J.-M. Tang, N. Samarth, D. D. Awschalom, P.
+    Schiffer, and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>99</volume>
+    <page>227205</page><year>2007</year>
     <link>http://link.aps.org/abstract/PRL/v99/e227205</link>
-    <name>\prl</name> <volume>99</volume> <page>227205</page>
-    <year>2007</year>
   </journal>
-
-  <pdf>prl99_227205_2007.pdf</pdf>
-
-  <vjournal> <name>\VJNST</name> <volume>16</volume> <issue>24</issue>
-    <year>2007</year> </vjournal>
-
-  <abstract> We develop a quantitatively predictive theory for
-    impurity-band ferromagnetism in the low-doping regime of
-    Ga$_{1-x}$Mn$_{x}$As. We compare it with measurements of a series of
-    samples whose compositions span the transition from paramagnetic
-    insulating to ferromagnetic conducting behavior. The theoretical
-    Curie temperatures depend sensitively on the local fluctuations in
-    the Mn-hole binding energy, which originate from Mn disorder and
-    As antisite defects. The experimentally determined hopping energy
-    is an excellent predictor of the Curie temperature, in agreement
-    with the theory.</abstract> </article>
-
+  <vjournal>
+    <name>\VJNST</name><volume>16</volume>
+    <issue>24</issue><year>2007</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl99_227205_2007.pdf</link>
+  </url>
+  <abstract>
+    We develop a quantitatively predictive theory for impurity-band
+    ferromagnetism in the low-doping regime of Ga$_{1-x}$Mn$_{x}$As. We
+    compare it with measurements of a series of samples whose compositions
+    span the transition from paramagnetic insulating to ferromagnetic
+    conducting behavior. The theoretical Curie temperatures depend
+    sensitively on the local fluctuations in the Mn-hole binding energy,
+    which originate from Mn disorder and As antisite defects. The
+    experimentally determined hopping energy is an excellent predictor of
+    the Curie temperature, in agreement with the theory.
+  </abstract>
+</article>
 
 <article>
-  <author>F. Marczinowski, J. Wiebe, J.-M. Tang, M. E. Flatté, F. Meier, M. Morgenstern, and R. Wiesendanger</author>
-
-  <title>Local electronic structure near Mn acceptors in InAs: surface-induced symmetry breaking and coupling to host states</title>
-
+  <title>
+    Local electronic structure near Mn acceptors in InAs: surface-induced
+    symmetry breaking and coupling to host states
+  </title>
+  <author>
+    F. Marczinowski, J. Wiebe, J.-M. Tang, M. E. Flatté, F. Meier, M.
+    Morgenstern, and R. Wiesendanger
+  </author>
   <journal>
+    <name>\prl</name><volume>99</volume>
+    <page>157202</page><year>2007</year>
     <link>http://link.aps.org/abstract/PRL/v99/e157202</link>
-    <name>\prl</name> <volume>99</volume> <page>157202</page>
-    <year>2007</year>
   </journal>
-
-  <pdf>prl99_157202_2007.pdf</pdf>
-
-  <abstract>We present low-temperature scanning tunneling spectroscopy
-    measurements on Mn acceptors in InAs in comparison with
-    tight-binding calculations. We find a strong (001)-mirror
-    asymmetry of the bound hole wave function close to the (110)
-    surface. In addition, multiple acceptor-related peaks are observed
-    and are attributed to a spin-orbit splitting of the acceptor
-    level. Because of the $p$-$d$ exchange interaction the local density
-    of states near the acceptors is enhanced in the valence band and
-    suppressed in the conduction band. We also observe signs of
-    anisotropic scattering of the conduction band states by neutral
-    acceptors.</abstract> </article>
-
+  <url>
+    <name>[Full Text]</name>
+    <link>prl99_157202_2007.pdf</link>
+  </url>
+  <abstract>
+    We present low-temperature scanning tunneling spectroscopy measurements
+    on Mn acceptors in InAs in comparison with tight-binding calculations.
+    We find a strong (001)-mirror asymmetry of the bound hole wave function
+    close to the (110) surface. In addition, multiple acceptor-related peaks
+    are observed and are attributed to a spin-orbit splitting of the
+    acceptor level. Because of the $p$-$d$ exchange interaction the local
+    density of states near the acceptors is enhanced in the valence band and
+    suppressed in the conduction band. We also observe signs of anisotropic
+    scattering of the conduction band states by neutral acceptors.
+  </abstract>
+</article>
 
 <article>
-  <author>A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, J.-M. Tang, M. E. Flatté, J.-L. Primus, W. Van Roy, J. De Boeck, A. M. Monakhov, K. S. Romanov, I. E. Panaiotti, and N. S. Averkiev</author>
-
-  <title>Warping a single Mn acceptor wavefunction by straining the GaAs host</title>
-
+  <title>
+    Warping a single Mn acceptor wavefunction by straining the GaAs host
+  </title>
+  <author>
+    A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, J.-M. Tang, M. E. Flatté,
+    J.-L. Primus, W. Van Roy, J. De Boeck, A. M. Monakhov, K. S. Romanov, I.
+    E. Panaiotti, and N. S. Averkiev
+  </author>
   <journal>
+    <name>Nature Materials</name><volume>6</volume>
+    <page>512</page><year>2007</year>
     <link>http://www.nature.com/nmat/journal/v6/n7/abs/nmat1936.html</link>
-    <name>Nature Materials</name> <volume>6</volume> <page>512</page>
-    <year>2007</year> </journal>
-
-  <pdf>nmat6_512_2007.pdf</pdf>
-
+  </journal>
+  <vjournal>
+    <name>\VJNST</name><volume>16</volume>
+    <issue>4</issue><year>2007</year>
+  </vjournal>
   <url>
-     <link>nmat6_512_2007-news.pdf</link>
-     <name>[News and Views]</name> </url>
+    <name>[Full Text]</name>
+    <link>nmat6_512_2007.pdf</link>
+  </url>
   <url>
-     <link>nmat6_512_2007-supp.pdf</link>
-     <name>[Supplementary Information]</name> </url>
-
-  <vjournal> <name>\VJNST</name> <volume>16</volume> <issue>4</issue>
-    <year>2007</year> </vjournal>
-
-  <abstract>Transition-metal dopants such as Mn determine the
-    ferromagnetism in dilute magnetic semiconductors such as
-    Ga$_{1-x}$Mn$_{x}$As.  Recently, the acceptor states of Mn dopants
-    in GaAs were found to be highly anisotropic owing to the symmetry
-    of the host crystal.  Here, we show how the shape of such a state
-    can be modified by local strain. The Mn acceptors near InAs
-    quantum dots are mapped at room temperature by scanning tunnelling
-    microscopy. Dramatic distortions and a reduction in the symmetry
-    of the wavefunction of the hole bound to the Mn acceptor are
-    observed originating from strain induced by quantum dots.
+    <name>[News and Views]</name>
+    <link>nmat6_512_2007-news.pdf</link>
+  </url>
+  <url>
+    <name>[Supplementary Information]</name>
+    <link>nmat6_512_2007-supp.pdf</link>
+  </url>
+  <abstract>
+    Transition-metal dopants such as Mn determine the ferromagnetism in
+    dilute magnetic semiconductors such as Ga$_{1-x}$Mn$_{x}$As. Recently,
+    the acceptor states of Mn dopants in GaAs were found to be highly
+    anisotropic owing to the symmetry of the host crystal. Here, we show how
+    the shape of such a state can be modified by local strain. The Mn
+    acceptors near InAs quantum dots are mapped at room temperature by
+    scanning tunnelling microscopy. Dramatic distortions and a reduction in
+    the symmetry of the wavefunction of the hole bound to the Mn acceptor
+    are observed originating from strain induced by quantum dots.
     Calculations of the acceptor-state wavefunction in the presence of
-    strain, within a tight-binding model and within an effective-mass
-    model, agree with the experimentally observed shape. The magnetic
-    easy axes of strained lightly doped Ga$_{1-x}$Mn$_{x}$As can be
-    explained on the basis of the observed local density of states for
-    the single Mn spin.</abstract> </article>
-
+    strain, within a tight-binding model and within an effective-mass model,
+    agree with the experimentally observed shape. The magnetic easy axes of
+    strained lightly doped Ga$_{1-x}$Mn$_{x}$As can be explained on the
+    basis of the observed local density of states for the single Mn spin.
+  </abstract>
+</article>
 
 <article>
-  <author>D. Kitchen, A. Richardella, P. Roushan, J.-M. Tang, M. E. Flatté, and A. Yazdani</author>
-
-  <title>Hole-mediated interactions of Mn pairs on GaAs (110)</title>
-
+  <title>
+    Hole-mediated interactions of Mn pairs on GaAs (110)
+  </title>
+  <author>
+    D. Kitchen, A. Richardella, P. Roushan, J.-M. Tang, M. E. Flatté, and A.
+    Yazdani
+  </author>
   <journal>
+    <name>\jap</name><volume>101</volume>
+    <page>09G515</page><year>2007</year>
     <link>http://link.aip.org/link/?JAP/101/09G515</link>
-    <name>\jap</name> <volume>101</volume> <page>09G515</page>
-    <year>2007</year> </journal>
-
-  <pdf>jap101_09G515_2007.pdf</pdf>
-
-  <abstract>An STM-substitution technique is used to incorporate
-    single Mn atoms into Ga sites in GaAs (110) surfaces. The
-    electronic states near a single Mn in the acceptor configuration
-    produce a strong in-gap resonance associated with the acceptor
-    level. The isolated Mn acceptor is probed in both $p$-type and
-    $n$-type environments to access the neutral and ionized acceptor
-    configurations. The Mn acceptor at the surface substitution site
-    shares bulk characteristics that compare well with tight-binding
-    calculations. The anisotropic structure of the Mn hole state plays
-    an important role in hole-mediated interactions between the Mn
-    acceptors. Isolated Mn pairs show a strong interaction dependence
-    on crystal orientation and spacing. Certain pair orientations
-    produce a strong splitting of the acceptor level into two levels
-    with bonding-like and anti-bonding-like symmetries. A
-    tight-binding model relates the acceptor level splitting and the
-    spin-spin interaction energy $J$.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>jap101_09G515_2007.pdf</link>
+  </url>
+  <abstract>
+    An STM-substitution technique is used to incorporate single Mn atoms
+    into Ga sites in GaAs (110) surfaces. The electronic states near a
+    single Mn in the acceptor configuration produce a strong in-gap
+    resonance associated with the acceptor level. The isolated Mn acceptor
+    is probed in both $p$-type and $n$-type environments to access the
+    neutral and ionized acceptor configurations. The Mn acceptor at the
+    surface substitution site shares bulk characteristics that compare well
+    with tight-binding calculations. The anisotropic structure of the Mn
+    hole state plays an important role in hole-mediated interactions between
+    the Mn acceptors. Isolated Mn pairs show a strong interaction dependence
+    on crystal orientation and spacing. Certain pair orientations produce a
+    strong splitting of the acceptor level into two levels with bonding-like
+    and anti-bonding-like symmetries. A tight-binding model relates the
+    acceptor level splitting and the spin-spin interaction energy $J$.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang, J. Levy and M. E. Flatté</author>
-
-  <title>All-electrical control of single ion spins in a semiconductor</title>
-
+  <title>
+    All-electrical control of single ion spins in a semiconductor
+  </title>
+  <author>
+    J.-M. Tang, J. Levy and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>97</volume>
+    <page>106803</page><year>2006</year>
     <link>http://link.aps.org/abstract/PRL/v97/e106803</link>
-    <name>\prl</name> <volume>97</volume> <page>106803</page>
-    <year>2006</year> </journal>
-
-  <pdf>prl97_106803_2006.pdf</pdf>
-
-  <vjournal> <name>\VJNST</name> <volume>14</volume> <issue>12</issue>
-    <year>2006</year> </vjournal>
-  <vjournal> <name>\VJQI</name> <volume>6</volume> <issue>9</issue>
-    <year>2006</year> </vjournal>
-
-  <abstract>We propose a method for all-electrical manipulation of
-    single ion spins substituted into a semiconductor. Mn ions with a
-    bound hole in GaAs form a natural example. Direct electrical
-    manipulation of the ion spin is possible, because electric fields
-    manipulate the orbital wave function of the hole, and through the
-    spin-orbit coupling the spin is reoriented as well. Coupling ion
-    spins can be achieved using gates to control the size of the hole
-    wave function. Coherent manipulation of ionic spins may find
-    applications in high-density storage and in scalable coherent or
-    quantum information processing.</abstract> </article>
-
+  </journal>
+  <vjournal>
+    <name>\VJNST</name><volume>14</volume>
+    <issue>12</issue><year>2006</year>
+  </vjournal>
+  <vjournal>
+    <name>\VJQI</name><volume>6</volume>
+    <issue>9</issue><year>2006</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl97_106803_2006.pdf</link>
+  </url>
+  <abstract>
+    We propose a method for all-electrical manipulation of single ion spins
+    substituted into a semiconductor. Mn ions with a bound hole in GaAs form
+    a natural example. Direct electrical manipulation of the ion spin is
+    possible, because electric fields manipulate the orbital wave function
+    of the hole, and through the spin-orbit coupling the spin is reoriented
+    as well. Coupling ion spins can be achieved using gates to control the
+    size of the hole wave function. Coherent manipulation of ionic spins may
+    find applications in high-density storage and in scalable coherent or
+    quantum information processing.
+  </abstract>
+</article>
 
 <article>
-  <author>D. Kitchen, A. Richardella, J.-M. Tang, M. E. Flatté, and A. Yazdani</author>
-
-  <title>Atom-by-atom substitution of Mn in GaAs and visualization of their hole-mediated interactions</title>
-
+  <title>
+    Atom-by-atom substitution of Mn in GaAs and visualization of their
+    hole-mediated interactions
+  </title>
+  <author>
+    D. Kitchen, A. Richardella, J.-M. Tang, M. E. Flatté, and A. Yazdani
+  </author>
   <journal>
+    <name>Nature</name><volume>442</volume>
+    <page>436</page><year>2006</year>
     <link>http://www.nature.com/nature/journal/v442/n7101/abs/nature04971.html</link>
-    <name>Nature</name> <volume>442</volume> <page>436</page>
-    <year>2006</year> </journal>
-
-  <pdf>nature442_436_2006.pdf</pdf>
-
-  <url>
-     <link>http://www.nature.com/nature/journal/v442/n7101/index.html</link>
-     <name>[Nature cover image]</name> </url>
-  <url>
-     <link>nature442_436_2006-news.pdf</link>
-     <name>[News and Views]</name> </url>
-  <url>
-     <link>nature442_436_2006-supp.pdf</link>
-     <name>[Supplementary Information]</name> </url>
-
+  </journal>
   <vjournal>
-    <name>\VJNST</name> <volume>14</volume> <issue>6</issue>
-    <year>2006</year> </vjournal>
-
-  <abstract>The discovery of ferromagnetism in Mn-doped GaAs has
-    ignited interest in the development of semiconductor technologies
-    based on electron spin and has led to several proof-of-concept
-    spintronic devices. A major hurdle for realistic applications of
-    Ga$_{1-x}$Mn$_{x}$As, or other dilute magnetic semiconductors,
-    remains that their ferromagnetic transition temperature is below
-    room temperature. Enhancing ferromagnetism in semiconductors
-    requires us to understand the mechanisms for interaction between
-    magnetic dopants, such as Mn, and identify the circumstances in
-    which ferromagnetic interactions are maximized. Here we describe
-    an atom-by-atom substitution technique using a scanning tunneling
+    <name>\VJNST</name><volume>14</volume>
+    <issue>6</issue><year>2006</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>nature442_436_2006.pdf</link>
+  </url>
+  <url>
+    <name>[Nature Cover Image]</name>
+    <link>http://www.nature.com/nature/journal/v442/n7101/index.html</link>
+  </url>
+  <url>
+    <name>[News and Views]</name>
+    <link>nature442_436_2006-news.pdf</link>
+  </url>
+  <url>
+    <name>[Supplementary Information]</name>
+    <link>nature442_436_2006-supp.pdf</link>
+  </url>
+  <abstract>
+    The discovery of ferromagnetism in Mn-doped GaAs has ignited interest in
+    the development of semiconductor technologies based on electron spin and
+    has led to several proof-of-concept spintronic devices. A major hurdle
+    for realistic applications of Ga$_{1-x}$Mn$_{x}$As, or other dilute
+    magnetic semiconductors, remains that their ferromagnetic transition
+    temperature is below room temperature. Enhancing ferromagnetism in
+    semiconductors requires us to understand the mechanisms for interaction
+    between magnetic dopants, such as Mn, and identify the circumstances in
+    which ferromagnetic interactions are maximized. Here we describe an
+    atom-by-atom substitution technique using a scanning tunneling
     microscope (STM) and apply it to perform a controlled study at the
-    atomic scale of the interactions between isolated Mn acceptors,
-    which are mediated by holes in GaAs. High-resolution STM
-    measurements are used to visualize the GaAs electronic states that
-    participate in the Mn-Mn interaction and to quantify the
-    interaction strengths as a function of relative position and
-    orientation. Our experimental findings, which can be explained
-    using tight-binding model calculations, reveal a strong dependence
-    of ferromagnetic interaction on crystallographic orientation. This
-    anisotropic interaction can potentially be exploited by growing
-    oriented Ga$_{1-x}$Mn$_{x}$As structures to enhance the
-    ferromagnetic transition temperature beyond that achieved in
-    randomly doped samples.</abstract> </article>
-
+    atomic scale of the interactions between isolated Mn acceptors, which
+    are mediated by holes in GaAs. High-resolution STM measurements are used
+    to visualize the GaAs electronic states that participate in the Mn-Mn
+    interaction and to quantify the interaction strengths as a function of
+    relative position and orientation. Our experimental findings, which can
+    be explained using tight-binding model calculations, reveal a strong
+    dependence of ferromagnetic interaction on crystallographic orientation.
+    This anisotropic interaction can potentially be exploited by growing
+    oriented Ga$_{1-x}$Mn$_{x}$As structures to enhance the ferromagnetic
+    transition temperature beyond that achieved in randomly doped samples.
+  </abstract>
+</article>
 
 <article>
-  <author>A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, J.-M. Tang, M. E. Flatté, W. Van Roy, J. De Boeck, and J. H. Wolter</author>
-
-  <title>Spatial structure of Mn-Mn acceptor pairs in GaAs</title>
-
+  <title>
+    Spatial structure of Mn-Mn acceptor pairs in GaAs
+  </title>
+  <author>
+    A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, J.-M. Tang, M. E. Flatté,
+    W. Van Roy, J. De Boeck, and J. H. Wolter
+  </author>
   <journal>
+    <name>\prl</name><volume>95</volume>
+    <page>256402</page><year>2005</year>
     <link>http://link.aps.org/abstract/PRL/v95/p256402</link>
-    <name>\prl</name> <volume>95</volume> <page>256402</page>
-    <year>2005</year> </journal>
-
-  <pdf>prl95_256402_2005.pdf</pdf> 
-
+  </journal>
   <vjournal>
-    <name>\VJNST</name> <volume>12</volume> <issue>26</issue>
-    <year>2005</year> </vjournal>
-
-  <abstract>The local density of states of Mn-Mn pairs in GaAs is
-    mapped with cross-sectional scanning tunneling microscopy and
-    compared with theoretical calculations based on envelope-function
-    and tight-binding models. These measurements and calculations show
-    that the crosslike shape of the Mn-acceptor wave function in GaAs
-    persists even at very short Mn-Mn spatial separations. The
-    resilience of the Mn-acceptor wave function to high doping levels
-    suggests that ferromagnetism in GaMnAs is strongly influenced by
-    impurity-band formation. The envelope-function and tight-binding
-    models predict similarly anisotropic overlaps of the Mn wave
-    functions for Mn-Mn pairs. This anisotropy implies differing Curie
-    temperatures for Mn-doped layers grown on differently oriented
-    substrates.</abstract> </article>
-
+    <name>\VJNST</name><volume>12</volume>
+    <issue>26</issue><year>2005</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl95_256402_2005.pdf</link>
+  </url>
+  <abstract>
+    The local density of states of Mn-Mn pairs in GaAs is mapped with
+    cross-sectional scanning tunneling microscopy and compared with
+    theoretical calculations based on envelope-function and tight-binding
+    models. These measurements and calculations show that the crosslike
+    shape of the Mn-acceptor wave function in GaAs persists even at very
+    short Mn-Mn spatial separations. The resilience of the Mn-acceptor wave
+    function to high doping levels suggests that ferromagnetism in GaMnAs is
+    strongly influenced by impurity-band formation. The envelope-function
+    and tight-binding models predict similarly anisotropic overlaps of the
+    Mn wave functions for Mn-Mn pairs. This anisotropy implies differing
+    Curie temperatures for Mn-doped layers grown on differently oriented
+    substrates.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Spin-orientation-dependent spatial structure of a magnetic acceptor state in a zincblende semiconductor</title>
-
+  <title>
+    Spin-orientation-dependent spatial structure of a magnetic acceptor
+    state in a zincblende semiconductor
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prb</name><volume>72</volume>
+    <page>161315(R)</page><year>2005</year>
     <link>http://link.aps.org/abstract/PRB/v72/p161315</link>
-    <name>\prb</name> <volume>72</volume> <page>161315(R)</page>
-    <year>2005</year> </journal>
-
-  <pdf>prb72_161315_2005.pdf</pdf>>
-
-  <abstract>The spin orientation of a magnetic dopant in a zincblende
-    semiconductor strongly influences the spatial structure of an
-    acceptor state bound to the dopant. The acceptor state has a
-    roughly oblate shape with the short axis aligned with the dopant's
-    core spin. For a Mn dopant in GaAs the local density of states at
-    a site 8 \AA{} away from the dopant can change by 90\% when
-    the Mn spin orientation changes.  These changes in the local
-    density of states could be probed by scanning tunneling microscopy
-    to infer the dopant's spin orientation.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb72_161315_2005.pdf</link>
+  </url>
+  <abstract>
+    The spin orientation of a magnetic dopant in a zincblende semiconductor
+    strongly influences the spatial structure of an acceptor state bound to
+    the dopant. The acceptor state has a roughly oblate shape with the short
+    axis aligned with the dopant's core spin. For a Mn dopant in GaAs the
+    local density of states at a site 8 \AA{} away from the dopant can
+    change by 90\% when the Mn spin orientation changes. These changes in
+    the local density of states could be probed by scanning tunneling
+    microscopy to infer the dopant's spin orientation.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Impurity induced low-energy resonances in Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$</title>
-
+  <title>
+    Impurity induced low-energy resonances in
+    Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prb</name><volume>70</volume>
+    <page>140510(R)</page><year>2004</year>
     <link>http://publish.aps.org/abstract/PRB/v70/p140510</link>
-    <name>\prb</name> <volume>70</volume> <page>140510(R)</page>
-    <year>2004</year> </journal>
-
-  <pdf>prb70_140510_2004.pdf</pdf>
-
+  </journal>
   <vjournal>
-    <name>\VJAS</name> <volume>7</volume> <issue>9</issue>
-    <year>2004</year> </vjournal>
-
-  <abstract>We study sharp low-energy resonance peaks in the local
-    density of states (LDOS) induced by Zn impurities or possible Cu
-    vacancies in superconducting
-    Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$. The measured structure of
-    these near-zero-bias resonances is quantitatively reproduced by an
-    extended impurity potential without invoking internal impurity
-    states or sophisticated tunneling models. The Zn potential extends
-    at least to the nearest-neighbor Cu sites, and the range of order
-    parameter suppression extends at least 8 \AA{} away from the Zn
+    <name>\VJAS</name><volume>7</volume>
+    <issue>9</issue><year>2004</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb70_140510_2004.pdf</link>
+  </url>
+  <abstract>
+    We study sharp low-energy resonance peaks in the local density of states
+    (LDOS) induced by Zn impurities or possible Cu vacancies in
+    superconducting Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$. The measured
+    structure of these near-zero-bias resonances is quantitatively
+    reproduced by an extended impurity potential without invoking internal
+    impurity states or sophisticated tunneling models. The Zn potential
+    extends at least to the nearest-neighbor Cu sites, and the range of
+    order parameter suppression extends at least 8 \AA{} away from the Zn
     site. We further show that the local spin susceptibilities near Zn
-    impurities increase rather than decrease with decreasing
-    temperature in the superconducting state due to the sharp increase
-    of the LDOS near the Fermi level.</abstract> </article>
-
+    impurities increase rather than decrease with decreasing temperature in
+    the superconducting state due to the sharp increase of the LDOS near the
+    Fermi level.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang</author>
-
-  <title>Structure of excited vortices with higher angular momentum in Bose-Einstein condensates</title>
-  
+  <title>
+    Structure of excited vortices with higher angular momentum in
+    Bose-Einstein condensates
+  </title>
+  <author>
+    J.-M. Tang
+  </author>
   <journal>
+    <name>\pra</name><volume>70</volume>
+    <page>043626</page><year>2004</year>
     <link>http://publish.aps.org/abstract/PRA/v70/p043626</link>
-    <name>\pra</name> <volume>70</volume> <page>043626</page>
-    <year>2004</year> </journal>
-  
-  <pdf>pra70_043626_2004.pdf</pdf> 
-
-  <abstract>The structure of vortices in Bose-Einstein condensed
-    atomic gases is studied taking into account many-body correlation
-    effects.  It is shown that for excited vortices the particle
-    density in the vortex core increases as the angular momentum of
-    the system increases. The core density can increase by several
-    times with only a few percent change in the angular momentum. This
-    result provides an explanation for the observations in which the
-    measured angular momentum is higher than the estimation based on
-    counting the number of vortices and the visibility of the vortex
-    cores is simultaneously reduced.  The calculated density profiles
-    for the excited vortices are in good agreement with experimental
-    measurements of a single vortex.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>pra70_043626_2004.pdf</link>
+  </url>
+  <abstract>
+    The structure of vortices in Bose-Einstein condensed atomic gases is
+    studied taking into account many-body correlation effects. It is shown
+    that for excited vortices the particle density in the vortex core
+    increases as the angular momentum of the system increases. The core
+    density can increase by several times with only a few percent change in
+    the angular momentum. This result provides an explanation for the
+    observations in which the measured angular momentum is higher than the
+    estimation based on counting the number of vortices and the visibility
+    of the vortex cores is simultaneously reduced. The calculated density
+    profiles for the excited vortices are in good agreement with
+    experimental measurements of a single vortex.
+  </abstract>
+</article>
 
 <article>
-  <author>A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, W. Van Roy, J. De Boeck, J. H. Wolter, J.-M. Tang and M. E. Flatté</author>
-
-  <title>Spatial structure of an individual Mn acceptor in GaAs</title>
-
+  <title>
+    Spatial structure of an individual Mn acceptor in GaAs
+  </title>
+  <author>
+    A. M. Yakunin, A. Yu. Silov, P. M. Koenraad, W. Van Roy, J. De Boeck, J.
+    H. Wolter, J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>92</volume>
+    <page>216806</page><year>2004</year>
     <link>http://publish.aps.org/abstract/PRL/v92/p216806</link>
-    <name>\prl</name> <volume>92</volume> <page>216806</page>
-    <year>2004</year> </journal>
-
-  <pdf>prl92_216806_2004.pdf</pdf> 
-
-  <abstract>The wave function of a hole bound to an individual Mn
-    acceptor in GaAs is spatially mapped by scanning tunneling
-    microscopy at room temperature and an anisotropic, crosslike shape
-    is observed. The spatial structure is compared with that from an
-    envelope-function, effective mass model and from a tight-binding
-    model. This demonstrates that anisotropy arising from the cubic
-    symmetry of the GaAs crystal produces the crosslike shape for the
-    hole wave function. Thus the coupling between Mn dopants in GaMnAs
-    mediated by such holes will be highly anisotropic.</abstract>
-    </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl92_216806_2004.pdf</link>
+  </url>
+  <abstract>
+    The wave function of a hole bound to an individual Mn acceptor in GaAs
+    is spatially mapped by scanning tunneling microscopy at room temperature
+    and an anisotropic, crosslike shape is observed. The spatial structure
+    is compared with that from an envelope-function, effective mass model
+    and from a tight-binding model. This demonstrates that anisotropy
+    arising from the cubic symmetry of the GaAs crystal produces the
+    crosslike shape for the hole wave function. Thus the coupling between Mn
+    dopants in GaMnAs mediated by such holes will be highly anisotropic.
+  </abstract>
+</article>
 
 <article>
-  <author>L.-J. Chen, D. J. Thouless, and J.-M. Tang</author>
-
-  <title>Bernstein-Greene-Kruskal solitary waves in three-dimensional magnetized plasma</title>
-
+  <title>
+    Bernstein-Greene-Kruskal solitary waves in three-dimensional magnetized
+    plasma
+  </title>
+  <author>
+    L.-J. Chen, D. J. Thouless, and J.-M. Tang
+  </author>
   <journal>
+    <name>\pre</name><volume>69</volume>
+    <page>055401(R)</page><year>2004</year>
     <link>http://publish.aps.org/abstract/PRE/v69/p055401</link>
-    <name>\pre</name> <volume>69</volume>
-    <page>055401(R)</page> <year>2004</year> </journal>
-
-  <pdf>pre69_055401_2004.pdf</pdf> 
-
-  <abstract>We study the width-amplitude relation for
-    three-dimensional Bernstein-Greene-Kruskal (BGK) electrostatic
-    solitary waves in magnetized plasmas, taking into account the
-    dynamics of both electrons and ions. We obtain two coupled
-    inequalities that constrain the amplitude and the widths parallel
-    and perpendicular to the magnetic field for a Gaussian potential,
-    and demonstrate how the solution space is further constrained by
-    the finite temperature ratio between electrons and ions. The
-    description is valid for both the electron and ion mode solitary
-    waves. Our results provide a quantitative basis for understanding
-    the ubiquity of BGK waves in widely different classes of
-    collisionless plasmas.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>pre69_055401_2004.pdf</link>
+  </url>
+  <abstract>
+    We study the width-amplitude relation for three-dimensional
+    Bernstein-Greene-Kruskal (BGK) electrostatic solitary waves in
+    magnetized plasmas, taking into account the dynamics of both electrons
+    and ions. We obtain two coupled inequalities that constrain the
+    amplitude and the widths parallel and perpendicular to the magnetic
+    field for a Gaussian potential, and demonstrate how the solution space
+    is further constrained by the finite temperature ratio between electrons
+    and ions. The description is valid for both the electron and ion mode
+    solitary waves. Our results provide a quantitative basis for
+    understanding the ubiquity of BGK waves in widely different classes of
+    collisionless plasmas.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Multiband tight-binding model of local magnetism in Ga$_{1-x}$Mn$_{x}$As</title>
-
+  <title>
+    Multiband tight-binding model of local magnetism in Ga$_{1-x}$Mn$_{x}$As
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prl</name><volume>92</volume>
+    <page>047201</page><year>2004</year>
     <link>http://publish.aps.org/abstract/PRL/v92/p047201</link>
-    <name>\prl</name> <volume>92</volume> <page>047201</page>
-    <year>2004</year> </journal>
-
-  <pdf>prl92_047201_2004.pdf</pdf>
-
-  <abstract>We present the spin and orbitally resolved local density
-    of states (LDOS) for a single Mn impurity and for two nearby Mn
-    impurities in GaAs. The GaAs host is described by a $sp$$^{3}$
-    tight-binding Hamiltonian, and the Mn impurity is described by a
-    local $p$-$d$ hybridization and on-site potential.  Local
-    spin-polarized resonances within the valence bands significantly
-    enhance the LDOS near the band edge. For two nearby parallel Mn
-    moments the acceptor states hybridize and split in energy. Thus
-    scanning tunneling spectroscopy can directly measure the Mn-Mn
-    interaction as a function of distance.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prl92_047201_2004.pdf</link>
+  </url>
+  <abstract>
+    We present the spin and orbitally resolved local density of states
+    (LDOS) for a single Mn impurity and for two nearby Mn impurities in
+    GaAs. The GaAs host is described by a $sp$$^{3}$ tight-binding
+    Hamiltonian, and the Mn impurity is described by a local $p$-$d$
+    hybridization and on-site potential. Local spin-polarized resonances
+    within the valence bands significantly enhance the LDOS near the band
+    edge. For two nearby parallel Mn moments the acceptor states hybridize
+    and split in energy. Thus scanning tunneling spectroscopy can directly
+    measure the Mn-Mn interaction as a function of distance.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and M. E. Flatté</author>
-
-  <title>Van Hove features in Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$ and effective parameters for Ni impurities inferred from STM spectra</title>
-
+  <title>
+    Van Hove features in Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$ and
+    effective parameters for Ni impurities inferred from STM spectra
+  </title>
+  <author>
+    J.-M. Tang and M. E. Flatté
+  </author>
   <journal>
+    <name>\prb</name><volume>66</volume>
+    <page>060504(R)</page><year>2002</year>
     <link>http://publish.aps.org/abstract/PRB/v66/p060504</link>
-    <name>\prb</name> <volume>66</volume> <page>060504(R)</page>
-    <year>2002</year> </journal>
-
-  <pdf>prb66_060504_2002.pdf</pdf>
-
+  </journal>
   <vjournal>
-    <name>\VJAS</name> <volume>3</volume> <issue>4</issue>
-    <year>2002</year> </vjournal>
-
-  <abstract>We present a detailed quantitative comparison between
-    theoretical calculations of the local density of states and recent
-    experimental measurements of scanning tunneling spectra around Ni
-    impurities in Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$. A double-peak
-    structure on the hole side of the spectrum at the Ni site is
-    identified as the spin-split Van Hove singularity in the band
-    structure. The Ni atom induces local changes in hopping matrix
-    elements comparable in size to the induced on-site spin-dependent
-    potential. We find evidence from the measurements of
-    order-parameter suppression in the vicinity of the Ni impurity.
-    These extracted impurity parameters can be of use in quantitative
-    calculations of macroscopic response properties, such as the ac
-    conductivity.</abstract> </article>
-
+    <name>\VJAS</name><volume>3</volume>
+    <issue>4</issue><year>2002</year>
+  </vjournal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb66_060504_2002.pdf</link>
+  </url>
+  <abstract>
+    We present a detailed quantitative comparison between theoretical
+    calculations of the local density of states and recent experimental
+    measurements of scanning tunneling spectra around Ni impurities in
+    Bi$_{2}$Sr$_{2}$CaCu$_{2}$O$_{8+\delta}$. A double-peak structure on the
+    hole side of the spectrum at the Ni site is identified as the spin-split
+    Van Hove singularity in the band structure. The Ni atom induces local
+    changes in hopping matrix elements comparable in size to the induced
+    on-site spin-dependent potential. We find evidence from the measurements
+    of order-parameter suppression in the vicinity of the Ni impurity. These
+    extracted impurity parameters can be of use in quantitative calculations
+    of macroscopic response properties, such as the ac conductivity.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang</author>
-
-  <title>Variational wave functions of a vortex in cyclotron motion</title>
-
+  <title>
+    Variational wave functions of a vortex in cyclotron motion
+  </title>
+  <author>
+    J.-M. Tang
+  </author>
   <journal>
+    <name>\ijmpb</name><volume>15</volume>
+    <page>1601</page><year>2001</year>
     <link>http://ejournals.wspc.com.sg/ijmpb/15/1510n11/S0217979201006082.html</link>
-    <name>\ijmpb</name> <volume>15</volume> <page>1601</page>
-    <year>2001</year> </journal>
-
-  <pdf>ijmpb15_1601_2001.pdf</pdf>
-
-  <book>
-    <name>Recent Progress in Many-Body Theories</name>
-    <editor>R. F. Bishop, K. A. Gernoth, N. R. Walet and Y. Xian</editor>
-    <publisher>World Scientific</publisher>
-    <address>Singapore</address> <year>2000</year>
-    <pages>315-8</pages> </book>
-
-  <abstract>A microscopic theory is presented to provide a basis for
-  the intuitive analogy between a quantized vortex in a superfluid and
-  an electron in an uniform magnetic field in two dimensions. A
-  one-to-one correspondence between the rotational states of a vortex
-  in a cylinder and the cyclotron states of an electron in the central
-  gauge is found. Like the Landau levels of an electron, the energy
-  levels of a vortex are highly degenerate. However, the gap between
-  two adjacent energy levels depends not only on the quantized
-  circulation, but also increases with the energy, and scales with the
-  size of the vortex.</abstract> </article>
-
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>ijmpb15_1601_2001.pdf</link>
+  </url>
+  <abstract>
+    A microscopic theory is presented to provide a basis for the intuitive
+    analogy between a quantized vortex in a superfluid and an electron in an
+    uniform magnetic field in two dimensions. A one-to-one correspondence
+    between the rotational states of a vortex in a cylinder and the
+    cyclotron states of an electron in the central gauge is found. Like the
+    Landau levels of an electron, the energy levels of a vortex are highly
+    degenerate. However, the gap between two adjacent energy levels depends
+    not only on the quantized circulation, but also increases with the
+    energy, and scales with the size of the vortex.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang</author>
-
-  <title>The structure of a quantized vortex in a Bose-Einstein condensate</title>
-
+  <title>
+    The structure of a quantized vortex in a Bose-Einstein condensate
+  </title>
+  <author>
+    J.-M. Tang
+  </author>
   <journal>
+    <name>\jltp</name><volume>121</volume>
+    <page>287</page><year>2000</year>
     <link>http://dx.doi.org/10.1023/A:1017516706057</link>
-    <name>\jltp</name> <volume>121</volume> <page>287</page>
-    <year>2000</year> </journal>
-
-  <pdf>jltp121_287_2000.pdf</pdf>
-
-  <abstract>The structure of a quantized vortex in a Bose-Einstein
-    Condensate is investigated using the projection method developed
-    by Peierls, Yoccoz, and Thouless. This method was invented to
-    describe the collective motion of a many-body system beyond the
-    mean-field approximation. The quantum fluctuation has been
-    properly built into the variational wave function, and a vortex is
-    described by a linear combination of Feynman wave functions
-    weighted by a Gaussian distribution in their center positions. In
-    contrast to the solution of the Gross-Pitaevskii equation, the
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>jltp121_287_2000.pdf</link>
+  </url>
+  <abstract>
+    The structure of a quantized vortex in a Bose-Einstein Condensate is
+    investigated using the projection method developed by Peierls, Yoccoz,
+    and Thouless. This method was invented to describe the collective motion
+    of a many-body system beyond the mean-field approximation. The quantum
+    fluctuation has been properly built into the variational wave function,
+    and a vortex is described by a linear combination of Feynman wave
+    functions weighted by a Gaussian distribution in their center positions.
+    In contrast to the solution of the Gross-Pitaevskii equation, the
     particle density is finite at the vortex axis and the vorticity is
-    distributed in the core region.</abstract> </article>
-
+    distributed in the core region.
+  </abstract>
+</article>
 
 <article>
-  <author>J.-M. Tang and D. J. Thouless</author>
-
-  <title>Longitudinal force on a moving potential</title>
-
+  <title>
+    Longitudinal force on a moving potential
+  </title>
+  <author>
+    J.-M. Tang and D. J. Thouless
+  </author>
   <journal>
+    <name>\prb</name><volume>58</volume>
+    <page>14179</page><year>1998</year>
     <link>http://publish.aps.org/abstract/PRB/v58/p14179</link>
-    <name>\prb</name> <volume>58</volume> <page>14179</page>
-    <year>1998</year> </journal>
+  </journal>
+  <url>
+    <name>[Full Text]</name>
+    <link>prb58_14179_1998.pdf</link>
+  </url>
+  <abstract>
+    We show a formal result of the longitudinal force acting on a moving
+    potential. The potential can be velocity dependent, which appears in
+    various interesting physical systems, such as electrons in the presence
+    of a magnetic flux line, or phonons scattering off a moving vortex. By
+    using the phase-shift analysis, we are able to show the equivalence
+    between the adiabatic perturbation theory and the kinetic theory for the
+    longitudinal force in the dilute gas limit.
+  </abstract>
+</article>
 
-  <pdf>prb58_14179_1998.pdf</pdf>
-
-  <abstract>We show a formal result of the longitudinal force acting
-    on a moving potential. The potential can be velocity dependent,
-    which appears in various interesting physical systems, such as
-    electrons in the presence of a magnetic flux line, or phonons
-    scattering off a moving vortex. By using the phase-shift analysis,
-    we are able to show the equivalence between the adiabatic
-    perturbation theory and the kinetic theory for the longitudinal
-    force in the dilute gas limit.</abstract> </article>
 
 </publist>

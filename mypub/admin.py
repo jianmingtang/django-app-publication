@@ -1,23 +1,16 @@
 from django.contrib import admin
 
-# Register your models here.
-
 from mypub.models import *
 
 class PubAdmin(admin.ModelAdmin):
-	list_display = ('Category', 'Title', 'Author','Journal', 'Volume', 'Page','Year','Link')
+	list_display = ('title', 'author', 'abstract')
 	fieldsets = [
-		('Category', {'fields': ['Category']}),
-		('Title',    {'fields': ['Title']}),
-		('Author',   {'fields': ['Author']}),
-		('Journal',  {'fields': ['Journal']}),
-		('Volume',   {'fields': ['Volume']}),
-		('Page',     {'fields': ['Page']}),
-		('Year',     {'fields': ['Year']}),
-		('Link',     {'fields': ['Link']}),
+		('Title',    {'fields': ['title']}),
+		('Author',   {'fields': ['author']}),
+		('Abstract', {'fields': ['abstract']}),
 	]
-	list_filter = ['Year']
-	search_fields = ['Title','Arthur','Journal']
+#	list_filter = ['Year']
+	search_fields = ['title','author','abstract']
 
-admin.site.register(Publication, PubAdmin)
+admin.site.register(Article, PubAdmin)
 
