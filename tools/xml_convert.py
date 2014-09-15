@@ -1,8 +1,27 @@
 #!/usr/bin/python
 
+
+#    xml_convert.py:
+#    Convert a publication list in XML format into other formats.
+#    Copyright (C) <2014>  <Jian-Ming Tang>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 import xml.sax
 from xml.sax import handler
-import sys
+import sys, re
 import argparse
 import textwrap
 import psycopg2 as psqldb
@@ -84,37 +103,45 @@ def sql_query(xh):
 
 
 def fix_HTML(s):
-	p = s.find('$_{')
-	while p >= 0:
-		ns = s[0:p] + '<sub>' + s[p+3:]
-		p = ns.find('}$')
-		s = ns[0:p] + '</sub>' + ns[p+2:]
-		p = s.find('$_{')
+	s = re.sub(r'\$(.*?)_{(.*?)}(.*?)\$', r'$\1<sub>\2</sub>\3$',s)
+	s = re.sub(r'\$(.*?)\^{(.*?)}(.*?)\$', r'$\1<sup>\2</sup>\3$',s)
+	s = re.sub(r'\$(.*?)\$', r'<i>\1</i>',s)
 
-	p = s.find('$^{')
-	while p >= 0:
-		ns = s[0:p] + '<sup>' + s[p+3:]
-		p = ns.find('}$')
-		s = ns[0:p] + '</sup>' + ns[p+2:]
-		p = s.find('$^{')
+#	p = s.find('$_{')
+#	while p >= 0:
+#		ns = s[0:p] + '<sub><i>' + s[p+3:]
+#		p = ns.find('}$')
+#		s = ns[0:p] + '</i></sub>' + ns[p+2:]
+#		p = s.find('$_{')
+#
+#	p = s.find('$^{')
+#	while p >= 0:
+#		ns = s[0:p] + '<sup><i>' + s[p+3:]
+#		p = ns.find('}$')
+#		s = ns[0:p] + '</i></sup>' + ns[p+2:]
+#		p = s.find('$^{')
+#
+#	p = s.find('$')
+#	while p >= 0:
+#		ns = s[0:p] + '<i>' + s[p+1:]
+#		p = ns.find('$')
+#		s = ns[0:p] + '</i>' + ns[p+1:]
+#		p = s.find('$')
 
-	p = s.find('$')
-	while p >= 0:
-		ns = s[0:p] + '<i>' + s[p+1:]
-		p = ns.find('$')
-		s = ns[0:p] + '</i>' + ns[p+1:]
-		p = s.find('$')
+#	s = s.replace('\\bar{1}',u'1\u0305')
+	s = s.replace('\\bar{1}',
+		'<span style="text-decoration: overline">1</span>')
+	s = s.replace('\\delta','<math>&delta;</math>')
+	s = s.replace('\\AA{}','&Aring;')
+	s = s.replace('\\%','%')
+	s = s.replace(u'\u00e9','&eacute;')
+	s = s.replace(u'\u00c7','&Ccedil;')
 
-	s.replace('\delta','<math>&delta;</math>')
-	s.replace('\AA{}','&Aring;')
-	s.replace(u'\u00e9','&eacute;')
-	s.replace(u'\u00c7','&Ccedil;')
-
-#	p = s.find('\delta')
+#	p = s.find('\\delta')
 #	while p >= 0:
 #		ns = s[0:p] + '<math>&delta;</math>' + s[p+6:]
 #		s = ns
-#		p = s.find('\delta')
+#		p = s.find('\\delta')
 #
 #	p = s.find('\AA{}')
 #	while p >= 0:
@@ -132,10 +159,13 @@ def fix_HTML(s):
 #	while p >= 0:
 #		ns = s[0:p] + '&Ccedil;' + s[p+1:]
 #		s = ns
-#		p = s.find(u'\u00c7')
+#	 	p = s.find(u'\u00c7')
 	return s
 
 def print_html(xh):
+	print '<!DOCTYPE html>'
+	print '<html>'
+	print '<body>'
 	print '<h1>Publication List:</h1>'
 	print '<ol>'
 	for a in xh.article:
@@ -166,10 +196,12 @@ def print_html(xh):
 			print vjlist['0'] + vjlist[v.data['name']] \
 				+ ' <b>' + v.data['volume'] + '</b>, ' \
 				+ v.data['issue'] + ' (' + v.data['year'] +');'
-		print '    <dd>' + abstract
+		print '    <dd>' + abstract.encode('utf-8')
 		print '    </dl>'
 		print '  </li>'
 	print '</ol>'
+	print '</body>'
+	print '</html>'
 
 def my_indent_print(m,n,s):
 	w = textwrap.TextWrapper(width = 80 - max(m,n))
