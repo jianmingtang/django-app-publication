@@ -2,7 +2,8 @@
 
 
 #    xml_convert.py:
-#    Convert a publication list in XML format into other formats.
+#      Convert a publication list in XML format into Plain Text, HTML,
+#      XML and SQL.
 #    Copyright (C) <2014>  <Jian-Ming Tang>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -51,7 +52,9 @@ class Journal:
 			'year' : 0,
 			'link' : '',
 		}
-journal_keys = Journal().data.keys()
+#journal_keys = Journal().data.keys()
+# needs to be in fixed order for SQL insert
+journal_keys = ['name', 'volume', 'page', 'year', 'link']
 
 class vJournal:
 	def __init__(self):
@@ -61,7 +64,8 @@ class vJournal:
 			'issue' : '',
 			'year' : 0,
 		}
-vjournal_keys = vJournal().data.keys()
+#vjournal_keys = vJournal().data.keys()
+vjournal_keys = ['name', 'volume', 'issue', 'year']
 
 class URL:
 	def __init__(self):
@@ -69,7 +73,8 @@ class URL:
 			'name' : '',
 			'link' : '',
 		}
-url_keys = URL().data.keys()
+#url_keys = URL().data.keys()
+url_keys = ['name', 'link']
 
 class Article:
 	def __init__(self):
@@ -87,17 +92,30 @@ article_keys = [ 'title', 'author', 'abstract' ]
 # SQL format for ' is ''
 def sql_query(xh):
 	xh.article.reverse()
-	s1 = 'INSERT INTO mypub_article (Title,Author,Abstract,Note) ' \
+	sA = 'INSERT INTO mypub_article (Title,Author,Abstract,journal_id) ' \
 		+ 'VALUES (%s,%s,%s,%s) RETURNING id'
-	s2 = 'INSERT INTO mypub_journal (Name,Volume,Page,Year,Link) ' \
-		+ 'VALUES (%s,%s,%s,%s,%s,%s) RETURNING id'
+	sJ = 'INSERT INTO mypub_journal (Title,Volume,Page,Year,Link) ' \
+		+ 'VALUES (%s,%s,%s,%s,%s) RETURNING id'
+	sV = 'INSERT INTO mypub_vj (Title,Volume,Issue,Year,article_id) ' \
+		+ 'VALUES (%s,%s,%s,%s,%s)'
+	sU = 'INSERT INTO mypub_url (Name,Link,article_id) ' \
+		+ 'VALUES (%s,%s,%s)'
+	cursor.execute('BEGIN TRANSACTION;')
 	for a in xh.article:
-		p1 = [ a.data[k] for k in article_keys ] + ['']
-		print p1
-		cursor.execute('BEGIN TRANSACTION;')
-		cursor.execute(s1,p1)
-		a_id = cursor.fetchone()[0]
-		print a_id
+		pJ = [ a.data['journal'].data[k] for k in journal_keys ]
+		if pJ[0] in jlist_keys:
+			pJ[0] = jlist[pJ[0]]
+		cursor.execute(sJ,pJ)
+		jid = cursor.fetchone()[0]
+		pA = [ a.data[k] for k in article_keys ] + [jid]
+		cursor.execute(sA,pA)
+		aid = cursor.fetchone()[0]
+		for v in a.data['vjournal']:
+			pV = [ v.data[k] for k in vjournal_keys ] + [aid]
+			cursor.execute(sV,pV)
+		for u in a.data['url']:
+			pU = [ u.data[k] for k in url_keys ] + [aid]
+			cursor.execute(sU,pU)
 	if (args.commit):
 		cursor.execute('COMMIT;')
 
