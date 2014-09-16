@@ -1,35 +1,37 @@
 from django.db import models
 
-class Article(models.Model):
-	def __unicode__(self):
-		return self.Title
-	title = models.CharField(max_length=200)
-	author = models.CharField(max_length=200)
-	abstract = models.CharField(max_length=2000)
-	note = models.CharField(max_length=100)
-
 class Journal(models.Model):
 	def __unicode__(self):
-		return self.Title
+		return self.title
 	title = models.CharField(max_length=200)
 	volume = models.CharField(max_length=10)
 	page = models.CharField(max_length=20)
 	year = models.IntegerField()
 	link = models.URLField()
 
-class vJournal(models.Model):
+class Article(models.Model):
 	def __unicode__(self):
-		return self.Title
+		return self.title
+	title = models.CharField(max_length=200)
+	author = models.CharField(max_length=200)
+	abstract = models.CharField(max_length=2000)
+	journal = models.OneToOneField(Journal)
+
+class VJ(models.Model):
+	def __unicode__(self):
+		return self.title
 	title = models.CharField(max_length=200)
 	volume = models.CharField(max_length=10)
 	issue = models.CharField(max_length=10)
 	year = models.IntegerField()
+	article = models.ForeignKey(Article)
 
 class URL(models.Model):
 	def __unicode__(self):
-		return self.Name
+		return self.name
 	name = models.CharField(max_length=200)
 	link = models.URLField()
+	article = models.ForeignKey(Article)
 
 class ConfPaper(models.Model):
 	def __unicode__(self):
