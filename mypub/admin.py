@@ -1,25 +1,28 @@
+from django.db import models
 from django.contrib import admin
-
+from django.forms import forms, Textarea
 from mypub.models import Article, Journal, VJ, URL
+
+class LargeTextarea(forms.Textarea):
+	def __init__(self, *args, **kwargs):
+		attrs = kwargs.setdefault('attrs', {})
+		attrs.setdefault('rows', 20)
+		attrs.setdefault('cols', 100)
+		super(LargeTextarea, self).__init__(*args, **kwargs)
 
 class ArticleAdmin(admin.ModelAdmin):
 	list_display = ('title', 'author', 'abstract', 'journal')
 	fieldsets = [
-		('title',    {'fields': ['title']}),
-		('author',   {'fields': ['author']}),
+		('Article',  {'fields': ['title', 'author']}),
 		('abstract', {'fields': ['abstract']}),
 	]
-#	list_filter = ['year']
 	search_fields = ['title','author','abstract']
+	formfield_overrides = {
+		models.TextField: {'widget': LargeTextarea},
+	}
 
 class JournalAdmin(admin.ModelAdmin):
 	list_display = ('title', 'volume', 'page', 'year', 'link')
-#	fieldsets = [
-#		('title',    {'fields': ['title']}),
-#		('volume',   {'fields': ['volume']}),
-#		('page', {'fields': ['page']}),
-#		('year', {'fields': ['year']}),
-#	]
 	list_filter = ['year']
 	search_fields = ['title']
 
@@ -30,6 +33,9 @@ class VJAdmin(admin.ModelAdmin):
 
 class URLAdmin(admin.ModelAdmin):
 	list_display = ('article', 'name', 'link')
+#	formfield_overrides = {
+#		models.CharField: {'widget': TextInput(attrs={'cols':'20'})},
+#	}
 
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Journal, JournalAdmin)

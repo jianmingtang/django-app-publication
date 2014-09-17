@@ -14,7 +14,7 @@ class Article(models.Model):
 		return self.title
 	title = models.CharField(max_length=200)
 	author = models.CharField(max_length=200)
-	abstract = models.CharField(max_length=2000)
+	abstract = models.TextField()
 	journal = models.OneToOneField(Journal)
 
 class VJ(models.Model):
