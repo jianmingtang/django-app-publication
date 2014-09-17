@@ -1,11 +1,26 @@
-<html>
-{% if all_list %}
-    <ul>
-    {% for paper in all_list %}
-        <li><a href="/publication/{{ paper.id }}/">{{ paper.Title }}</a></li>
+{% extends "base.html5" %}
+
+{% block body %}
+{% autoescape off %}
+{% if plist|length > 0 %}
+  <ol>
+    {% for a,j,ul,vl in plist %}
+      <li>{{a.title}}<br>
+          <i>{{a.author}}</i><br>
+          <a href="{{j.link}}">{{j.title}}
+            <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
+          {% for u in ul %}
+            <a href="local/{{u.link}}">{{u.name}}</a>
+          {% endfor %}
+          {% for v in vl %}
+            {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
+          {% endfor %}
+          <p>{{a.abstract}}</p>
+      </li>
     {% endfor %}
-    </ul>
+  </ol>
 {% else %}
-    <p>No papers are available.</p>
+  <p>No papers are available.</p>
 {% endif %}
-</html>
+{% endautoescape %}
+{% endblock body %}
