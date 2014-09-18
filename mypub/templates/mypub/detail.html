@@ -1,12 +1,23 @@
-<html>
-<table>
-<tr><td> <b>Title:</b>
-    <td> {{paper.Title}}
-<tr><td> <b>Authors:</b>
-    <td> {{paper.Author}}
-<tr><td> <b>Citation:</b>
-    <td> <i>{{paper.Journal}}</i> <b>{{paper.Volume}}</b>, {{paper.Page}} ({{paper.Year}})
-<tr><td> <b>Link:</b>
-    <td> {{paper.Link}}
-</table>
-</html>
+{% extends "base.html5" %}
+
+{% block body %}
+{% autoescape off %}
+
+{% for a,j,ul,vl in paper %}
+  <dl>
+    <dt><h3>{{a.title}}</h3></dt>
+      <dd><i>{{a.author}}</i><br>
+        <a href="{{j.link}}">{{j.title}}
+          <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
+        {% for u in ul %}
+          <a href="local/{{u.link}}">{{u.name}}</a>
+        {% endfor %}
+        {% for v in vl %}
+          {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
+        {% endfor %}
+        <p>{{a.abstract}}</p>
+      </dd>
+  </dl>
+{% endfor %}
+{% endautoescape %}
+{% endblock body %}

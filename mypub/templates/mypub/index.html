@@ -5,7 +5,7 @@
 {% if plist|length > 0 %}
   <ol>
     {% for a,j,ul,vl in plist %}
-      <li>{{a.title}}<br>
+      <li><b>{{a.title}}</b><br>
           <i>{{a.author}}</i><br>
           <a href="{{j.link}}">{{j.title}}
             <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
