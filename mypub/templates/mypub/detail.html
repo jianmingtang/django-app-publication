@@ -1,23 +1,37 @@
 {% extends "base.html5" %}
-
+{% block head %}
+<style>
+table {
+	background: linear-gradient(#d0e4fe,white);
+	width: 90%;
+}
+tr {
+	vertical-align: top;
+}
+</style>
+{% endblock head %}
 {% block body %}
-{% autoescape off %}
-
-{% for a,j,ul,vl in paper %}
+{% load staticfiles %}
+{% for a,j,ul,vl,t in paper %}
   <dl>
-    <dt><h3>{{a.title}}</h3></dt>
-      <dd><i>{{a.author}}</i><br>
+    <dt><h3>{{a.title|safe}}</h3></dt>
+      <dd><i>{{a.author|safe}}</i><br>
         <a href="{{j.link}}">{{j.title}}
           <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
         {% for u in ul %}
-          <a href="local/{{u.link}}">{{u.name}}</a>
+          <a href="{% static "" %}{{u.link}}">{{u.name}}</a>
         {% endfor %}
         {% for v in vl %}
           {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
         {% endfor %}
-        <p>{{a.abstract}}</p>
+        <br>
+        <table>
+        <tr>
+        <td><img src="{% static "" %}thumb/{{t}}"></td>
+        <td>{{a.abstract|safe}}</td>
+        </tr>
+        </table>
       </dd>
   </dl>
 {% endfor %}
-{% endautoescape %}
 {% endblock body %}

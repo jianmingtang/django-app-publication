@@ -1,26 +1,42 @@
 {% extends "base.html5" %}
-
+{% load staticfiles %}
+{% block head %}
+<style>
+table { 
+        background: linear-gradient(#d0e4fe,white);
+        width: 90%;
+}
+tr {
+        vertical-align: top;
+}
+</style>
+{% endblock head %}
 {% block body %}
 {% autoescape off %}
 {% if plist|length > 0 %}
-  <ol>
-    {% for a,j,ul,vl in plist %}
-      <li><b>{{a.title}}</b><br>
-          <i>{{a.author}}</i><br>
-          <a href="{{j.link}}">{{j.title}}
+   <ol>
+   {% for a,j,ul,vl,t in plist %}
+      <li><a href="{{a.id}}"><b>{{a.title}}</b><br></a>
+         <i>{{a.author}}</i><br>
+         <a href="{{j.link}}">{{j.title}}
             <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
-          {% for u in ul %}
-            <a href="local/{{u.link}}">{{u.name}}</a>
-          {% endfor %}
-          {% for v in vl %}
+         {% for u in ul %}
+            <a href="{% static "" %}{{u.link}}">{{u.name}}</a>
+         {% endfor %}
+         {% for v in vl %}
             {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
-          {% endfor %}
-          <p>{{a.abstract}}</p>
-      </li>
-    {% endfor %}
-  </ol>
+         {% endfor %}
+         <table width="90%">
+         <tr>
+         <td><img src="{% static "" %}thumb/{{t}}"></td>
+         <td>{{a.abstract|safe}}</td>
+         </tr>
+         </table>
+      </li><br>
+   {% endfor %}
+   </ol>
 {% else %}
-  <p>No papers are available.</p>
+   <p>No papers are available.</p>
 {% endif %}
 {% endautoescape %}
 {% endblock body %}

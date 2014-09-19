@@ -1,4 +1,4 @@
-#from django.shortcuts import render
+from django.shortcuts import render
 
 from django.http import HttpResponse
 from django.template import RequestContext, loader
@@ -16,7 +16,6 @@ def toFullName(vlist):
 	for v in vlist:
 		v.title = vjlist['0'] + vjlist[v.title]
 	return vlist
-	
 
 def toHTML(s):
 	s = re.sub(r'\$(.*?)_{(.*?)}(.*?)\$', r'$\1<sub>\2</sub>\3$',s)
@@ -31,32 +30,40 @@ def toHTML(s):
 	s = s.replace(u'\u00c7','&Ccedil;')
 	return s
 
+def extract_one_article(a):
+	a.title = toHTML(a.title)
+	a.author = toHTML(a.author)
+	a.abstract = toHTML(a.abstract)
+	ul = URL.objects.filter(article_id=a.id).order_by('id')
+	vl = VJ.objects.filter(article_id=a.id).order_by('id')
+	vl = toFullName(vl)
+	return a, ul, vl
+
+def process(ulist):
+	for u in ulist:
+		if u.name == '[Full Text]':
+			t = u.link.replace('pdf','png')
+	return t
+	
+
 def index(request):
 	jlist = Journal.objects.order_by('-year')
 	plist = []
 	for j in jlist:
 		a = Article.objects.filter(journal_id=j.id)[0]
-		a.title = toHTML(a.title)
-		a.author = toHTML(a.author)
-		a.abstract = toHTML(a.abstract)
-		ulist = URL.objects.filter(article_id=a.id).order_by('id')
-		vlist = VJ.objects.filter(article_id=a.id).order_by('id')
-		vlist = toFullName(vlist)
-		plist.append([a,j,ulist,vlist])
+		a, ulist, vlist = extract_one_article(a)
+		t = process(ulist)
+		plist.append([a,j,ulist,vlist,t])
 	template = loader.get_template('mypub/index.html')
 	context = RequestContext(request, {'plist': plist})
 	return HttpResponse(template.render(context))
 
 def detail(request, aid):
 	a = Article.objects.get(id=aid)
-	a.title = toHTML(a.title)
-	a.author = toHTML(a.author)
-	a.abstract = toHTML(a.abstract)
 	j = Journal.objects.get(id=a.journal_id)
-	ulist = URL.objects.filter(article_id=a.id).order_by('id')
-	vlist = VJ.objects.filter(article_id=a.id).order_by('id')
-	vlist = toFullName(vlist)
-	paper = [a, j, ulist, vlist]
+	a, ulist, vlist = extract_one_article(a)
+	t = process(ulist)
+	paper = [a, j, ulist, vlist, t]
         template = loader.get_template('mypub/detail.html')
         context = RequestContext(request, {'paper': [paper]})
         return HttpResponse(template.render(context))
