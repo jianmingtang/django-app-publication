@@ -1,0 +1,26 @@
+{% load static %}
+{% autoescape off %}
+<h3><a href="/publication/{{a.id}}">{{a.title}}</a></h3>
+<i>{{a.author}}</i><br/>
+<a href="{{j.link}}">{{j.title}}
+	<b>{{j.volume}}</b>, {{j.page}} ({{j.year}})</a>
+{% spaceless %}
+{% for u in ul %}
+	{% if "http" in u.link %}
+		<a href="{{u.link}}">{{u.name}}</a>
+	{% else %}
+		<a href="{% static "mypub/pdf/" %}{{u.link}}">{{u.name}}</a>
+	{% endif %}
+{% endfor %}
+{% for v in vl %}
+	{{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
+{% endfor %}
+<br/>
+<table>
+	<tr>
+		<td><img src="{% static "mypub/thumb/" %}{{t}}"></td>
+		<td>{{a.abstract|safe}}</td>
+	</tr>
+</table>
+{% endspaceless %}
+{% endautoescape %}
