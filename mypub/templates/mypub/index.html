@@ -3,17 +3,24 @@
 {% block head %}
 <link rel="stylesheet" type="text/css"
 	href="{% static "mypub/css/classic.css" %}">
+<style>
+li {
+	padding: 20px;
+	background: linear-gradient(to right,#bbffbb,white);
+	border-radius: 10px;
+}
+</style>
 {% endblock head %}
 {% block body %}
-{% autoescape off %}
 <div id="search_box">
+   <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django." /></a>
    <form action="search" method="get">
       <input type="text" name="s">
       <input type="submit" value="Search">
    </form>
 </div>
 {% if msg %}
-   {{ msg }}
+   <h2>{{msg}}</h2>
    <h1>Search Found List:</h1>
 {% else %}
    <h1>Publication List:</h1>
@@ -21,34 +28,10 @@
 {% if plist %}
    <ol>
    {% for a,j,ul,vl,t in plist %}
-      <li><a href="{{a.id}}"><b>{{a.title}}</b></a><br/>
-         <i>{{a.author}}</i><br/>
-         <a href="{{j.link}}">{{j.title}}
-            <b>{{j.volume}}</b>, {{j.page}} ({{j.year}})</a>
-         {% spaceless %}
-         {% for u in ul %}
-            {% if "http" in u.link %}
-               <a href="{{u.link}}">{{u.name}}</a>
-            {% else %}
-               <a href="{% static "mypub/pdf/" %}{{u.link}}">{{u.name}}</a>
-            {% endif %}
-         {% endfor %}
-         {% for v in vl %}
-            {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
-         {% endfor %}
-         <br/>
-         {% endspaceless %}
-         <table>
-         <tr>
-         <td><img src="{% static "mypub/thumb/" %}{{t}}"></td>
-         <td>{{a.abstract|safe}}</td>
-         </tr>
-         </table>
-      </li><br/>
+      <li>{% include "mypub/show_one_paper.html" %}</li><br>
    {% endfor %}
    </ol>
 {% else %}
    <p>No papers are available.</p>
 {% endif %}
-{% endautoescape %}
 {% endblock body %}

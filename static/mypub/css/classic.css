@@ -1,3 +1,7 @@
+body {
+	background-color: #cccccc;
+}
+
 table {
         background: linear-gradient(#d0e4fe,white);
         width: 90%;
@@ -16,17 +20,29 @@ img {
 	background-color: white;
 }
 
+h3 {
+	margin: 0px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
 #search_box {
 	float: right;
 	background: linear-gradient(lightgreen,white);
 	padding: 4px 2px;
 	border: 0px;
 	border-radius: 5px;
-	box-shadow: 5px 5px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 #search_box input {
 	border: 1px solid;
 	border-radius: 5px;
 	font-size: 16px;
+}
+
+#search_box a {
+	float: right;
 }

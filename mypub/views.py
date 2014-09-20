@@ -82,7 +82,7 @@ def search(request):
 		message = 'You submitted an empty form.'
 	else:
 		s = request.GET['s']
-		message = 'You searched for: %r' % s
+		message = 'You searched for (%r)' % s
 		ls = len(s)
 		if ls == 0:
 			message = 'You submitted an empty string.'
@@ -96,7 +96,7 @@ def search(request):
 			q = q | Q(title__icontains=sub) \
 			| Q(author__icontains=sub) | Q(abstract__icontains=sub)
 			alist = Article.objects.filter(q).order_by('-journal__year')
-		message = message + '; returning %d records.' % len(alist)
+		message = message + ' and returned %d records.' % len(alist)
 	plist = []
 	for a in alist:
 		plist.append(get_one_paper_from_aid(a.id))

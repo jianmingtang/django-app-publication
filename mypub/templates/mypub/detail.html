@@ -3,34 +3,21 @@
 {% block head %}
 <link rel="stylesheet" type="text/css"
 	href="{% static "mypub/css/classic.css" %}">
+<style>
+#my {
+	padding: 25px;
+	background: linear-gradient(to right,#ffcccc,white);
+	border-radius: 10px;
+}
+</style>
 {% endblock head %}
 {% block body %}
 {% for a,j,ul,vl,t in paper %}
-   <dl>
-      <dt><h3>{{a.title|safe}}</h3></dt>
-      <dd><i>{{a.author|safe}}</i><br/>
-        <a href="{{j.link}}">{{j.title}}
-          <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
-         {% spaceless %}
-         {% for u in ul %}
-            {% if "http" in u.link %}
-               <a href="{{u.link}}">{{u.name}}</a>
-            {% else %}
-               <a href="{% static "mypub/pdf/" %}{{u.link}}">{{u.name}}</a>
-            {% endif %}
-         {% endfor %}
-         {% for v in vl %}
-            {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
-         {% endfor %}
-         <br/>
-         {% endspaceless %}
-         <table>
-         <tr>
-         <td><img src="{% static "mypub/thumb/" %}{{t}}"></td>
-         <td>{{a.abstract|safe}}</td>
-         </tr>
-         </table>
-      </dd>
-   </dl>
+	<div id="my">{% include "mypub/show_one_paper.html" %}</div>
 {% endfor %}
+<p>
+<form name="input" action="/publication" method="get">
+<input type="submit" value="Back to Publication Page">
+</form>
+</p>
 {% endblock body %}
