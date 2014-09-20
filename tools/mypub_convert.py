@@ -202,7 +202,7 @@ def fix_HTML(s):
 #	s = s.replace('\\bar{1}',u'1\u0305')
 	s = s.replace('\\bar{1}',
 		'<span style="text-decoration: overline">1</span>')
-	s = s.replace('\\delta','<math>&delta;</math>')
+	s = s.replace('\\delta','<math><mi>&delta;</mi></math>')
 	s = s.replace('\\AA{}','&Aring;')
 	s = s.replace('\\%','%')
 	s = s.replace(u'\u00e9','&eacute;')
