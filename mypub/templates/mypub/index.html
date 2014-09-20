@@ -6,13 +6,25 @@
 {% endblock head %}
 {% block body %}
 {% autoescape off %}
-{% if plist|length > 0 %}
+<div id="search_box">
+   <form action="search" method="get">
+      <input type="text" name="s">
+      <input type="submit" value="Search">
+   </form>
+</div>
+{% if msg %}
+   {{ msg }}
+   <h1>Search Found List:</h1>
+{% else %}
+   <h1>Publication List:</h1>
+{% endif %}
+{% if plist %}
    <ol>
    {% for a,j,ul,vl,t in plist %}
       <li><a href="{{a.id}}"><b>{{a.title}}</b></a><br/>
          <i>{{a.author}}</i><br/>
          <a href="{{j.link}}">{{j.title}}
-            <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
+            <b>{{j.volume}}</b>, {{j.page}} ({{j.year}})</a>
          {% spaceless %}
          {% for u in ul %}
             {% if "http" in u.link %}
