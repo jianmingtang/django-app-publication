@@ -8,6 +8,11 @@ li {
 	padding: 20px;
 	background: linear-gradient(to right,#bbffbb,white);
 	border-radius: 10px;
+	-webkit-animation: mymove .5s;
+}
+@-webkit-keyframes mymove {
+	0%   {width: 50%; margin: 100px;}
+	100% {width: 95%; margin: 0px;}
 }
 </style>
 {% endblock head %}
@@ -23,7 +28,7 @@ li {
    <h2>{{msg}}</h2>
    <h1>Search Found List:</h1>
 {% else %}
-   <h1>Publication List:</h1>
+   <h1>Jian-Ming Tang<br/>Publication List:</h1>
 {% endif %}
 {% if plist %}
    <ol>
@@ -34,4 +39,9 @@ li {
 {% else %}
    <p>No papers are available.</p>
 {% endif %}
+<p>
+<form name="input" action="{% url "mypub" %}" method="post">{% csrf_token %}
+<input type="submit" value="Back to Publication Page">
+</form>
+</p>
 {% endblock body %}
