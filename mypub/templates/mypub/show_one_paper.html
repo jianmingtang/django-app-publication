@@ -1,6 +1,6 @@
 {% load static %}
 {% autoescape off %}
-<h3><a href="/publication/{{a.id}}">{{a.title}}</a></h3>
+<h3><a href="{% url "mypub" %}{{a.id}}">{{a.title}}</a></h3>
 <i>{{a.author}}</i><br/>
 <a href="{{j.link}}">{{j.title}}
 	<b>{{j.volume}}</b>, {{j.page}} ({{j.year}})</a>

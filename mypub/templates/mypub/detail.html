@@ -16,7 +16,7 @@
 	<div id="my">{% include "mypub/show_one_paper.html" %}</div>
 {% endfor %}
 <p>
-<form name="input" action="/publication" method="get">
+<form name="input" action="{% url "mypub" %}" method="get">
 <input type="submit" value="Back to Publication Page">
 </form>
 </p>
