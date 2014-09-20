@@ -39,12 +39,11 @@ def extract_one_article(a):
 	vl = toFullName(vl)
 	return a, ul, vl
 
-def process(ulist):
+def get_thumb_name(ulist):
 	for u in ulist:
 		if u.name == '[Full Text]':
 			t = u.link.replace('pdf','png')
 	return t
-	
 
 def index(request):
 	jlist = Journal.objects.order_by('-year')
@@ -52,7 +51,7 @@ def index(request):
 	for j in jlist:
 		a = Article.objects.filter(journal_id=j.id)[0]
 		a, ulist, vlist = extract_one_article(a)
-		t = process(ulist)
+		t = get_thumb_name(ulist)
 		plist.append([a,j,ulist,vlist,t])
 	template = loader.get_template('mypub/index.html')
 	context = RequestContext(request, {'plist': plist})
@@ -62,7 +61,7 @@ def detail(request, aid):
 	a = Article.objects.get(id=aid)
 	j = Journal.objects.get(id=a.journal_id)
 	a, ulist, vlist = extract_one_article(a)
-	t = process(ulist)
+	t = get_thumb_name(ulist)
 	paper = [a, j, ulist, vlist, t]
         template = loader.get_template('mypub/detail.html')
         context = RequestContext(request, {'paper': [paper]})

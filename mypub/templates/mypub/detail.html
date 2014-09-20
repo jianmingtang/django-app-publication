@@ -1,37 +1,36 @@
 {% extends "base.html5" %}
+{% load static %}
 {% block head %}
-<style>
-table {
-	background: linear-gradient(#d0e4fe,white);
-	width: 90%;
-}
-tr {
-	vertical-align: top;
-}
-</style>
+<link rel="stylesheet" type="text/css"
+	href="{% static "mypub/css/classic.css" %}">
 {% endblock head %}
 {% block body %}
-{% load staticfiles %}
 {% for a,j,ul,vl,t in paper %}
-  <dl>
-    <dt><h3>{{a.title|safe}}</h3></dt>
-      <dd><i>{{a.author|safe}}</i><br>
+   <dl>
+      <dt><h3>{{a.title|safe}}</h3></dt>
+      <dd><i>{{a.author|safe}}</i><br/>
         <a href="{{j.link}}">{{j.title}}
           <b>{{j.volume}}</b>, {{j.page}}({{j.year}})</a>
-        {% for u in ul %}
-          <a href="{% static "" %}{{u.link}}">{{u.name}}</a>
-        {% endfor %}
-        {% for v in vl %}
-          {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
-        {% endfor %}
-        <br>
-        <table>
-        <tr>
-        <td><img src="{% static "" %}thumb/{{t}}"></td>
-        <td>{{a.abstract|safe}}</td>
-        </tr>
-        </table>
+         {% spaceless %}
+         {% for u in ul %}
+            {% if "http" in u.link %}
+               <a href="{{u.link}}">{{u.name}}</a>
+            {% else %}
+               <a href="{% static "mypub/pdf/" %}{{u.link}}">{{u.name}}</a>
+            {% endif %}
+         {% endfor %}
+         {% for v in vl %}
+            {{v.title}} <b>{{v.volume}}</b>({{v.issue}}) ({{v.year}});
+         {% endfor %}
+         <br/>
+         {% endspaceless %}
+         <table>
+         <tr>
+         <td><img src="{% static "mypub/thumb/" %}{{t}}"></td>
+         <td>{{a.abstract|safe}}</td>
+         </tr>
+         </table>
       </dd>
-  </dl>
+   </dl>
 {% endfor %}
 {% endblock body %}

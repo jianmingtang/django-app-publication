@@ -1,0 +1,14 @@
+table {
+        background: linear-gradient(#d0e4fe,white);
+        width: 90%;
+	padding: 0px 5px;
+}
+tr {
+        vertical-align: top;
+}
+td {
+	padding: 5px;
+}
+img {
+	background-color: white;
+}
