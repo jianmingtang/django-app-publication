@@ -1,6 +1,7 @@
 {% extends "base.html5" %}
 {% load static %}
 {% block head %}
+<title>Jian-Ming Tang Publication List</title>
 <link rel="stylesheet" type="text/css"
 	href="{% static "mypub/css/classic.css" %}">
 <style>
@@ -11,6 +12,10 @@ li {
 	-webkit-animation: mymove .5s;
 }
 @-webkit-keyframes mymove {
+	0%   {width: 50%; margin: 100px;}
+	100% {width: 95%; margin: 0px;}
+}
+@keyframes mymove {
 	0%   {width: 50%; margin: 100px;}
 	100% {width: 95%; margin: 0px;}
 }
