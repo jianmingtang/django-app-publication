@@ -11,11 +11,12 @@ vjlist = { '0' : 'Virtual Journal of ',
         '\\VJNST': 'Nanoscale Science and Technology',
         '\\VJQI': 'Quantum Information',
         }
-vjlist_keys = vjlist.keys()
+vjlist_keys = set(vjlist.keys()) - set(['0'])
 
 def toFullName(vlist):
 	for v in vlist:
-		v.title = vjlist['0'] + vjlist[v.title]
+		if v.title in vjlist_keys:
+			v.title = vjlist['0'] + vjlist[v.title]
 	return vlist
 
 def toHTML(s):
@@ -53,6 +54,26 @@ def get_thumb_name(ulist):
 			t = u.link.replace('pdf','png')
 	return t
 
+def field(x):
+	return {'title': x[0].title,
+		'author': x[0].author,
+		'abstract': x[0].abstract,
+		'year': x[1].year, }
+
+def sort_plist(plist,sort,direction):
+	if direction == 'desc':
+		rev = True
+	else:
+		rev = False
+	plist.sort(key = lambda x: field(x)[sort], reverse=rev)
+
+def get_sort_param(r):
+	sort = r['sort']
+	if sort not in ('title','author','abstract','year',):
+		sort = None
+	direction = r.get('dir')
+	return sort, direction
+
 def index(request):
 #	jlist = Journal.objects.order_by('-year')
 	alist = Article.objects.order_by('-journal__year')
@@ -64,6 +85,10 @@ def index(request):
 #		a, ulist, vlist = get_all_extra_links(a)
 #		t = get_thumb_name(ulist)
 #		plist.append([a,j,ulist,vlist,t])
+	if 'sort' in request.GET:
+		sort, direction = get_sort_param(request.GET)
+		if sort != None:
+			sort_plist(plist,sort,direction)
 	template = loader.get_template('mypub/index.html')
 	context = RequestContext(request, {'plist': plist})
 	return HttpResponse(template.render(context))
@@ -76,30 +101,39 @@ def detail(request, aid):
 
 def search(request):
 	alist = []
-	ls = 0
 	slist = []
+	message = ''
 	if 's' not in request.GET:
-		message = 'You submitted an empty form.'
+		s = request.session.get('s')
+		if s == None:
+			message = 'You submitted an empty form,'
+#		else:
+#			del request.session['s']
 	else:
 		s = request.GET['s']
-		message = 'You searched for (%r)' % s
-		ls = len(s)
-		if ls == 0:
-			message = 'You submitted an empty string.'
+		if s == '':
+			message = 'You submitted an empty string,'
+		elif len(s) > 20:
+			message = 'Your search string is too long,'
 		else:
-			slist = s.split()
-	if ls > 20:
-		message = 'Your search string is too long.'
-	else:
-		q = Q()
-		for sub in slist:
-			q = q | Q(title__icontains=sub) \
-			| Q(author__icontains=sub) | Q(abstract__icontains=sub)
-			alist = Article.objects.filter(q).order_by('-journal__year')
-		message = message + ' and returned %d records.' % len(alist)
+			request.session['s'] = s
+			request.session.set_expiry(300)
+	if message == '':
+		message = 'You searched for (%r),' % s
+		slist = s.split()
+	q = Q()
+	for sub in slist:
+		q = q | Q(title__icontains=sub) \
+		| Q(author__icontains=sub) | Q(abstract__icontains=sub)
+	alist = Article.objects.filter(q).order_by('-journal__year')
+	message = message + ' and returned %d records.' % len(alist)
 	plist = []
 	for a in alist:
 		plist.append(get_one_paper_from_aid(a.id))
+	if 'sort' in request.GET:
+		sort, direction = get_sort_param(request.GET)
+		if sort != None:
+			sort_plist(plist,sort,direction)
 	template = loader.get_template('mypub/index.html')
 	context = RequestContext(request, {'plist': plist, 'msg': message,})
 	return HttpResponse(template.render(context))

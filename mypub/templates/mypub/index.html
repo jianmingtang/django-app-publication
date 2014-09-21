@@ -28,7 +28,7 @@ li {
 <div id="search_box">
    <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" alt="Made with Django." title="Made with Django." /></a>
    <form action="search" method="get">
-      <input type="text" name="s">
+      <input type="text" name="s" size="15" maxlength="20">
       <input type="submit" value="Search">
    </form>
 </div>
@@ -36,8 +36,23 @@ li {
    <h2>{{msg}}</h2>
    <h1>Search Found List:</h1>
 {% else %}
-   <h1>Jian-Ming Tang<br/>Publication List:</h1>
+   <h1>Jian-Ming Tang Publication List:</h1>
 {% endif %}
+<div id="sort_box">
+   <form action="" method="get">
+   <select name="sort">
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="abstract">Abstract</option>
+      <option value="year">Year</option>
+   </select>
+   <select name="dir">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+   </select>
+      <input type="submit" value="Sort">
+   </form>
+</div>
 {% if plist %}
    <ol>
    {% for a,j,ul,vl,t in plist %}
