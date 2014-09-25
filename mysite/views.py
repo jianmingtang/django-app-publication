@@ -21,8 +21,12 @@ def contact(request):
         if request.POST.get('email') and '@' not in request.POST['email']:
             errors.append('Enter a valid e-mail address.')
         if not errors:
-            print request.POST['subject'], request.POST['message'], \
-		request.POST['email']
+# Python 2
+#            print request.POST['subject'], request.POST['message'], \
+#		request.POST['email']
+# Python 3
+            print(request.POST['subject'], request.POST['message'],
+		request.POST['email'])
 #                request.POST.get('email', 'noreply@example.com'),
 #                ['siteowner@example.com'],
 #            )

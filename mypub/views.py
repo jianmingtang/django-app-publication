@@ -95,9 +95,9 @@ def index(request):
 
 def detail(request, aid):
 	paper = get_one_paper_from_aid(aid)
-        template = loader.get_template('mypub/detail.html')
-        context = RequestContext(request, {'paper': [paper]})
-        return HttpResponse(template.render(context))
+	template = loader.get_template('mypub/detail.html')
+	context = RequestContext(request, {'paper': [paper]})
+	return HttpResponse(template.render(context))
 
 def search(request):
 	alist = []
