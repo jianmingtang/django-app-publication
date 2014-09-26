@@ -50,6 +50,10 @@ a:link {
 	float: right;
 }
 
+#search_box ul.errorlist {
+	display:none;
+}
+
 #sort_box {
 	padding-left: 30%;
 	background: linear-gradient(to right,blue,white);
@@ -66,4 +70,8 @@ a:link {
 	font-family: arial;
 	font-weight: bold;
 	font-size: 16px;
+}
+
+#sort_box ul.errorlist {
+	display:none;
 }

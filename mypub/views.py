@@ -4,22 +4,23 @@ from django.http import HttpResponse
 from django.template import RequestContext, loader
 from django.db.models import Q
 from mypub.models import Article, Journal, URL, VJ
+from mypub.forms import SearchForm,SortForm
 import re
 
-vjlist = { '0' : 'Virtual Journal of ',
-        '\\VJAS': 'Applications of Superconductivity',
-        '\\VJNST': 'Nanoscale Science and Technology',
-        '\\VJQI': 'Quantum Information',
-        }
-vjlist_keys = set(vjlist.keys()) - set(['0'])
 
-def toFullName(vlist):
+
+def to_full_vj_name(vlist):
+	vjlist = {
+		'\\VJAS': 'Applications of Superconductivity',
+		'\\VJNST': 'Nanoscale Science and Technology',
+		'\\VJQI': 'Quantum Information',
+	}
 	for v in vlist:
-		if v.title in vjlist_keys:
-			v.title = vjlist['0'] + vjlist[v.title]
+		if v.title in vjlist:
+			v.title = 'Virtual Journal of ' + vjlist[v.title]
 	return vlist
 
-def toHTML(s):
+def to_html(s):
 	s = re.sub(r'\$(.*?)_{(.*?)}(.*?)\$', r'$\1<sub>\2</sub>\3$',s)
 	s = re.sub(r'\$(.*?)\^{(.*?)}(.*?)\$', r'$\1<sup>\2</sup>\3$',s)
 	s = re.sub(r'\$(.*?)\$', r'<i>\1</i>',s)
@@ -33,20 +34,10 @@ def toHTML(s):
 	return s
 
 def get_all_extra_links(a):
-	a.title = toHTML(a.title)
-	a.author = toHTML(a.author)
-	a.abstract = toHTML(a.abstract)
 	ul = URL.objects.filter(article_id=a.id).order_by('id')
 	vl = VJ.objects.filter(article_id=a.id).order_by('id')
-	vl = toFullName(vl)
-	return a, ul, vl
-
-def get_one_paper_from_aid(aid):
-	a = Article.objects.get(id=aid)
-	j = Journal.objects.get(id=a.journal_id)
-	a, ulist, vlist = get_all_extra_links(a)
-	t = get_thumb_name(ulist)
-	return a, j, ulist, vlist, t
+	vl = to_full_vj_name(vl)
+	return ul, vl
 
 def get_thumb_name(ulist):
 	for u in ulist:
@@ -54,43 +45,51 @@ def get_thumb_name(ulist):
 			t = u.link.replace('pdf','png')
 	return t
 
-def field(x):
-	return {'title': x[0].title,
-		'author': x[0].author,
-		'abstract': x[0].abstract,
-		'year': x[1].year, }
+def get_one_paper_from_aid(aid):
+	a = Article.objects.get(id=aid)
+	j = Journal.objects.get(id=a.journal_id)
+	a.title = to_html(a.title)
+	a.author = to_html(a.author)
+	a.abstract = to_html(a.abstract)
+	ulist, vlist = get_all_extra_links(a)
+	t = get_thumb_name(ulist)
+	return a, j, ulist, vlist, t
 
-def sort_plist(plist,sort,direction):
-	if direction == 'desc':
+def field(x):
+	return {'ti': x[0].title,    'au': x[0].author,
+		'ab': x[0].abstract, 'yr': x[1].year, }
+
+def sort_plist(plist,sortf,sortd):
+	if sortd == 'desc':
 		rev = True
 	else:
 		rev = False
-	plist.sort(key = lambda x: field(x)[sort], reverse=rev)
+	plist.sort(key = lambda x: field(x)[sortf], reverse=rev)
 
-def get_sort_param(r):
-	sort = r['sort']
-	if sort not in ('title','author','abstract','year',):
-		sort = None
-	direction = r.get('dir')
-	return sort, direction
+def get_sort_form(request):
+	if 'SortField' in request.GET:
+		soform = SortForm(request.GET)
+	else:
+		soform = SortForm()
+	return soform
+
+def process_sort_form(soform,plist):
+	if soform.is_valid():
+		sortf = soform.cleaned_data['SortField']
+		sortd = soform.cleaned_data['SortDir']
+		sort_plist(plist,sortf,sortd)
 
 def index(request):
-#	jlist = Journal.objects.order_by('-year')
 	alist = Article.objects.order_by('-journal__year')
 	plist = []
-#	for j in jlist:
 	for a in alist:
 		plist.append(get_one_paper_from_aid(a.id))
-#		a = Article.objects.filter(journal_id=j.id)[0]
-#		a, ulist, vlist = get_all_extra_links(a)
-#		t = get_thumb_name(ulist)
-#		plist.append([a,j,ulist,vlist,t])
-	if 'sort' in request.GET:
-		sort, direction = get_sort_param(request.GET)
-		if sort != None:
-			sort_plist(plist,sort,direction)
+	seform = SearchForm()
+	soform = get_sort_form(request)
+	process_sort_form(soform,plist)
 	template = loader.get_template('mypub/index.html')
-	context = RequestContext(request, {'plist': plist})
+	context = RequestContext(request, {'plist': plist,
+		'searchform': seform, 'sortform': soform})
 	return HttpResponse(template.render(context))
 
 def detail(request, aid):
@@ -100,40 +99,36 @@ def detail(request, aid):
 	return HttpResponse(template.render(context))
 
 def search(request):
-	alist = []
-	slist = []
-	message = ''
-	if 's' not in request.GET:
-		s = request.session.get('s')
-		if s == None:
-			message = 'You submitted an empty form,'
-#		else:
-#			del request.session['s']
+	seform = SearchForm(request.GET)
+	if seform.is_valid():
+		kw = seform.cleaned_data['Keyword']
+		slist = kw.split()
+		request.session['Keyword'] = kw
+		request.session.set_expiry(300)
+		message = 'Searched for (%r),' % kw
 	else:
-		s = request.GET['s']
-		if s == '':
-			message = 'You submitted an empty string,'
-		elif len(s) > 20:
-			message = 'Your search string is too long,'
+		kw = request.session.get('Keyword')
+		if kw:
+			message = message = 'Searched for (%r),' % kw
+			slist = kw.split()
 		else:
-			request.session['s'] = s
-			request.session.set_expiry(300)
-	if message == '':
-		message = 'You searched for (%r),' % s
-		slist = s.split()
+			slist = []
+			message = 'Your keyword is invalid,'
 	q = Q()
 	for sub in slist:
-		q = q | Q(title__icontains=sub) \
-		| Q(author__icontains=sub) | Q(abstract__icontains=sub)
-	alist = Article.objects.filter(q).order_by('-journal__year')
+		q = q & ( Q(title__icontains=sub) \
+		| Q(author__icontains=sub) | Q(abstract__icontains=sub) )
+	if slist:
+		alist = Article.objects.filter(q).order_by('-journal__year')
+	else:
+		alist = []
 	message = message + ' and returned %d records.' % len(alist)
 	plist = []
 	for a in alist:
 		plist.append(get_one_paper_from_aid(a.id))
-	if 'sort' in request.GET:
-		sort, direction = get_sort_param(request.GET)
-		if sort != None:
-			sort_plist(plist,sort,direction)
+	soform = get_sort_form(request)
+	process_sort_form(soform,plist)
 	template = loader.get_template('mypub/index.html')
-	context = RequestContext(request, {'plist': plist, 'msg': message,})
+	context = RequestContext(request, {'plist': plist, 'msg': message,
+		'searchform': seform, 'sortform': soform})
 	return HttpResponse(template.render(context))

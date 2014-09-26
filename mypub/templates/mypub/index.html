@@ -28,7 +28,8 @@ li {
 <div id="search_box">
    <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" alt="Made with Django." title="Made with Django." /></a>
    <form action="search" method="get">
-      <input type="text" name="s" size="15" maxlength="20">
+      {{ searchform }}
+{#      <input type="text" name="s" size="15" maxlength="20">  #}
       <input type="submit" value="Search">
    </form>
 </div>
@@ -40,6 +41,8 @@ li {
 {% endif %}
 <div id="sort_box">
    <form method="get">
+      {{ sortform.as_table }}
+{% comment %}
    <select name="sort">
       <option value="title">Title</option>
       <option value="author">Author</option>
@@ -50,6 +53,7 @@ li {
       <option value="asc">Ascending</option>
       <option value="desc">Descending</option>
    </select>
+{% endcomment %}
       <input type="submit" value="Sort">
    </form>
 </div>
